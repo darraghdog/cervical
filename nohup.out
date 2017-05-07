@@ -1,0 +1,76 @@
+[W 14:48:23.733 NotebookApp] Unrecognized JSON config file version, assuming version 1
+[I 14:48:24.712 NotebookApp] [nb_conda_kernels] enabled, 1 kernels found
+[I 14:48:24.724 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[I 14:48:24.876 NotebookApp] ✓ nbpresent HTML export ENABLED
+[W 14:48:24.876 NotebookApp] ✗ nbpresent PDF export DISABLED: No module named nbbrowserpdf.exporters.pdf
+[I 14:48:24.881 NotebookApp] [nb_conda] enabled
+[I 14:48:24.969 NotebookApp] [nb_anacondacloud] enabled
+[I 14:48:24.972 NotebookApp] Serving notebooks from local directory: /home/darragh/Dropbox/cervical
+[I 14:48:24.972 NotebookApp] 0 active kernels 
+[I 14:48:24.972 NotebookApp] The Jupyter Notebook is running at: http://localhost:8888/
+[I 14:48:24.973 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+Created new window in existing browser session.
+[W 18:04:27.318 NotebookApp] Unreadable Notebook: /home/darragh/Dropbox/cervical/scripts/resnet50_raw_val.ipynb NotJSONError("Notebook does not appear to be JSON: u''...",)
+[W 18:04:27.319 NotebookApp] 400 GET /api/contents/scripts/resnet50_raw_val.ipynb?type=notebook&_=1494176666520 (127.0.0.1) 2.34ms referer=http://localhost:8888/notebooks/scripts/resnet50_raw_val.ipynb
+[W 18:04:27.329 NotebookApp] 404 GET /nbextensions/nb_anacondacloud/main.js?v=20170507144824 (127.0.0.1) 9.23ms referer=http://localhost:8888/notebooks/scripts/resnet50_raw_val.ipynb
+[W 18:04:41.985 NotebookApp] delete /scripts/resnet50_raw_val.ipynb
+[I 18:04:47.253 NotebookApp] Creating new notebook in /scripts
+[W 18:04:48.395 NotebookApp] 404 GET /nbextensions/nb_anacondacloud/main.js?v=20170507144824 (127.0.0.1) 1.53ms referer=http://localhost:8888/notebooks/scripts/Untitled.ipynb?kernel_name=Python%20[Root]
+[I 18:04:48.489 NotebookApp] Kernel started: a07814bd-f99d-44f2-b358-b95e7851b558
+[W 18:04:48.499 NotebookApp] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (127.0.0.1) 1.88ms referer=http://localhost:8888/notebooks/scripts/Untitled.ipynb?kernel_name=Python%20[Root]
+[I 18:06:48.464 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 18:08:48.463 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 18:24:48.463 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 18:25:35.764 NotebookApp] Creating new directory in /scripts
+[W 18:25:48.368 NotebookApp] delete /scripts/Untitled Folder
+[I 18:26:48.467 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 18:26:56.324 NotebookApp] Saving file at /scripts/cnnmodels.py
+[I 18:29:20.398 NotebookApp] Saving file at /scripts/cnnmodels.py
+[I 18:30:48.875 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 18:32:48.463 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 18:34:48.463 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 18:36:48.463 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 18:38:48.462 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 18:40:17.850 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 18:42:48.463 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 18:44:48.462 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 18:46:48.462 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 18:47:11.071 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 18:48:48.463 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 18:50:22.820 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 18:50:48.463 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 18:52:48.463 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 18:53:28.547 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 19:20:48.874 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 19:22:48.463 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 19:24:48.462 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 19:26:48.464 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 19:28:48.464 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 19:30:48.463 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 19:32:15.363 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 19:32:48.463 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 19:34:48.463 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 19:36:48.876 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 19:38:48.463 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 19:40:48.463 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 19:41:24.446 NotebookApp] Kernel restarted: a07814bd-f99d-44f2-b358-b95e7851b558
+[I 19:41:40.979 NotebookApp] Kernel restarted: a07814bd-f99d-44f2-b358-b95e7851b558
+[I 19:42:29.391 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 19:43:37.434 NotebookApp] Kernel restarted: a07814bd-f99d-44f2-b358-b95e7851b558
+[I 19:43:46.060 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 19:44:48.462 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 19:46:29.317 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 19:48:48.462 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 19:49:44.019 NotebookApp] Kernel restarted: a07814bd-f99d-44f2-b358-b95e7851b558
+[I 19:49:44.984 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 19:50:48.463 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 19:52:48.873 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 19:53:57.537 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 19:55:19.613 NotebookApp] Kernel restarted: a07814bd-f99d-44f2-b358-b95e7851b558
+[I 19:56:48.874 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 19:58:18.122 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 19:58:48.463 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 20:00:48.464 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 20:01:28.101 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 20:01:31.793 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
+[I 20:01:39.969 NotebookApp] Saving file at /scripts/cnnmodels.py
