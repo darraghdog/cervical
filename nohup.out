@@ -74,3 +74,15 @@ Created new window in existing browser session.
 [I 20:01:28.101 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
 [I 20:01:31.793 NotebookApp] Saving file at /scripts/resnet50_val_raw.ipynb
 [I 20:01:39.969 NotebookApp] Saving file at /scripts/cnnmodels.py
+[W 20:26:48.950 NotebookApp] Unrecognized JSON config file version, assuming version 1
+[I 20:26:49.674 NotebookApp] [nb_conda_kernels] enabled, 1 kernels found
+[I 20:26:49.713 NotebookApp] The port 8888 is already in use, trying another port.
+[I 20:26:49.778 NotebookApp] ✓ nbpresent HTML export ENABLED
+[W 20:26:49.778 NotebookApp] ✗ nbpresent PDF export DISABLED: No module named nbbrowserpdf.exporters.pdf
+[I 20:26:49.782 NotebookApp] [nb_conda] enabled
+[I 20:26:49.830 NotebookApp] [nb_anacondacloud] enabled
+[I 20:26:49.833 NotebookApp] Serving notebooks from local directory: /home/darragh/Dropbox/cervical
+[I 20:26:49.833 NotebookApp] 0 active kernels 
+[I 20:26:49.833 NotebookApp] The Jupyter Notebook is running at: http://localhost:8889/
+[I 20:26:49.833 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+Created new window in existing browser session.
