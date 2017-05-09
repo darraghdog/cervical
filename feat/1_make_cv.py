@@ -49,24 +49,26 @@ def dhash(image,hash_size = 16):
 img_id_hash = []
 parent_dir = "train"
 subdir = os.listdir(parent_dir)[:3]
+subdir = subdir + ['train/' + s for s in subdir]
 counter = 1
-hash_size = 8
-val_size = 0.25
+hash_size = 4
+val_size = 0.2
+ROWS, COLS = 64, 64
 
 # Get the hash for each image
 for direc in subdir: 
     try:
-        names = os.listdir(os.path.join(parent_dir, direc))
+        names = os.listdir(direc)
     except:
         continue
     print counter, direc, parent_dir
     for name in names:
         if name != '.DS_Store':
-            imgdata = Image.open(os.path.join(parent_dir, direc, name)).convert("L")
+            imgdata = Image.open(os.path.join(direc, name)).resize((ROWS, COLS)).convert("L")
             img_hash = dhash(imgdata, hash_size)
-            img_id_hash.append([parent_dir, direc, name, img_hash])
+            img_id_hash.append([direc, name, img_hash])
             counter+=1
-df = pd.DataFrame(img_id_hash,columns=['ParDirectory' , 'SubDirectory', 'file_name', 'image_hash'])
+df = pd.DataFrame(img_id_hash,columns=['SubDirectory', 'file_name', 'image_hash'])
 
 # Now lets just do a sort and cut the first 25% to get our validation set
 df = df.sort(['SubDirectory', 'image_hash'], axis = 0)
@@ -75,6 +77,8 @@ for typ in df.SubDirectory.unique():
     dftmp  = df[df['SubDirectory'] == typ]
     val_len = int(dftmp.shape[0]*val_size)
     val_img += dftmp.file_name.values[:val_len].tolist()
+df.head()
+df.tail()
 
 fo = open('../val_images.csv','w')
 for i in val_img:
