@@ -137,3 +137,87 @@
 [I 14:46:32.681 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
 [W 15:09:31.510 NotebookApp] WebSocket ping timeout after 119984 ms.
 [W 15:09:45.974 NotebookApp] WebSocket ping timeout after 119986 ms.
+[C 17:41:50.764 NotebookApp] received signal 15, stopping
+[I 17:41:50.765 NotebookApp] Shutting down kernels
+[I 17:41:50.867 NotebookApp] Kernel shutdown: 3fb08dbd-1209-4068-a246-29bd54fa88f1
+[I 17:41:51.068 NotebookApp] Kernel shutdown: 60d19b43-eb21-442e-a4a8-8982b1aa07d2
+[I 18:58:11.383 NotebookApp] [nb_conda_kernels] enabled, 2 kernels found
+[I 18:58:11.387 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[W 18:58:11.800 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
+[I 18:58:11.880 NotebookApp] ✓ nbpresent HTML export ENABLED
+[W 18:58:11.880 NotebookApp] ✗ nbpresent PDF export DISABLED: No module named nbbrowserpdf.exporters.pdf
+[I 18:58:11.885 NotebookApp] [nb_conda] enabled
+[I 18:58:11.986 NotebookApp] [nb_anacondacloud] enabled
+[I 18:58:11.990 NotebookApp] Serving notebooks from local directory: /home/ubuntu/cervical
+[I 18:58:11.990 NotebookApp] 0 active kernels 
+[I 18:58:11.990 NotebookApp] The Jupyter Notebook is running at: http://[all ip addresses on your system]:8888/
+[I 18:58:11.991 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 18:58:19.321 NotebookApp] 302 GET / (176.61.36.2) 0.59ms
+[I 18:58:19.340 NotebookApp] 302 GET /tree (176.61.36.2) 0.86ms
+[I 18:58:21.488 NotebookApp] 302 POST /login?next=%2Ftree (176.61.36.2) 0.84ms
+[I 18:58:26.673 NotebookApp] Kernel started: bdfd4168-2903-49d7-b669-f8a7a48bc464
+[I 19:00:27.027 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 19:02:27.196 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 19:04:27.018 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 19:06:27.106 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 19:08:26.691 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 19:10:26.681 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 19:10:32.995 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 19:12:27.041 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 19:14:27.189 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 19:16:26.678 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 19:18:26.680 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 19:20:26.999 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 19:22:26.680 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 19:23:00.109 NotebookApp] Kernel interrupted: bdfd4168-2903-49d7-b669-f8a7a48bc464
+[I 19:24:26.682 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 19:26:26.812 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 19:26:38.344 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 19:28:26.685 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 19:30:26.672 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 19:32:26.664 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 19:33:30.767 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 19:33:39.035 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 19:34:26.664 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 19:37:23.912 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 19:40:26.971 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 19:44:26.650 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 19:46:26.659 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 19:48:26.653 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 19:50:26.654 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 19:52:26.958 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 19:54:26.975 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 19:54:38.745 NotebookApp] 302 GET /notebooks/sub/sub_dara_part_resnet_raw_20170510.csv (176.61.36.2) 0.94ms
+[I 19:54:45.661 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 19:54:48.861 NotebookApp] 302 GET /notebooks/sub/sub_dara_part_resnet_raw_20170510.csv (176.61.36.2) 0.94ms
+[I 20:00:26.979 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 20:02:26.650 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 20:04:26.670 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 20:04:41.344 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 20:06:08.524 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 20:08:01.566 NotebookApp] Kernel interrupted: bdfd4168-2903-49d7-b669-f8a7a48bc464
+[I 20:08:26.637 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 20:10:08.191 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 20:10:26.630 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 20:21:00.377 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 20:23:32.164 NotebookApp] 302 GET /notebooks/sub/sub_dara_part_resnet_raw_5xbag_20170510.csv (176.61.36.2) 0.92ms
+[I 20:23:41.104 NotebookApp] 302 GET /notebooks/sub/sub_dara_part_resnet_raw_5xbag_20170510.csv (176.61.36.2) 1.08ms
+[I 20:24:26.613 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 20:26:26.618 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 20:28:26.616 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 20:28:50.734 NotebookApp] Kernel interrupted: bdfd4168-2903-49d7-b669-f8a7a48bc464
+[I 20:30:26.608 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 20:36:26.649 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 20:42:26.624 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 20:42:42.548 NotebookApp] 302 GET /notebooks/sub/sub_dara_part_resnet_raw_5xbag_20170510.csv (176.61.36.2) 0.91ms
+[I 20:42:53.256 NotebookApp] 302 GET /notebooks/sub/sub_dara_part_resnet_raw_5xbag_20170510.csv (176.61.36.2) 0.91ms
+[I 20:44:26.736 NotebookApp] Saving file at /scripts/resnet50_val_raw-v1.ipynb
+[I 20:45:27.835 NotebookApp] Saving file at /scripts/resnet50_val_raw-part.ipynb
+[I 20:45:34.669 NotebookApp] Copying scripts/resnet50_val_raw-part.ipynb to /scripts
+[I 20:45:36.542 NotebookApp] Kernel started: 63f8b8a0-e65c-4d8e-af8b-3e4273fb90e3
+[I 20:46:05.750 NotebookApp] Saving file at /scripts/resnet50_val_raw-full.ipynb
+[I 20:47:24.287 NotebookApp] Saving file at /scripts/resnet50_val_raw-full.ipynb
+[I 20:48:03.586 NotebookApp] Kernel restarted: 63f8b8a0-e65c-4d8e-af8b-3e4273fb90e3
+[I 20:49:05.811 NotebookApp] Kernel restarted: 63f8b8a0-e65c-4d8e-af8b-3e4273fb90e3
+[I 20:49:22.507 NotebookApp] Saving file at /scripts/resnet50_val_raw-full.ipynb
+[I 20:55:36.586 NotebookApp] Saving file at /scripts/resnet50_val_raw-full.ipynb
