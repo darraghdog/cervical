@@ -9,4 +9,16 @@
 		<height>4128</height>
 		<depth>3</depth>
 	</size>
-	<segmented>0</segmented></annotation>
+	<segmented>0</segmented>
+	<object>
+		<name>lesion</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>264.0</xmin>
+			<ymin>261.0</ymin>
+			<xmax>3022.0</xmax>
+			<ymax>3787.0</ymax>
+		</bndbox>
+	</object></annotation>
