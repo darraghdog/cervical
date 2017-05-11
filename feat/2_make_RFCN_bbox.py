@@ -47,6 +47,7 @@ for bbox_file in bbox_files:
                 pos = i*4
                 bbox_ls.append([fname] +coords[pos:(pos+4)])
 bboxdf = pd.DataFrame(bbox_ls, columns=['img', 'x0', 'y0', 'w', 'h'])
+bboxdf.to_csv("../boundary_boxes_from_forums.csv", index= None)
 
 # Now check a few
 if validate:
@@ -71,8 +72,8 @@ if annotations:
     c= "lesion"
     pred_ls = []
     for image in bboxdf.img.unique():
-        image = 'train/' + image
         bbox = bboxdf[bboxdf['img'] == image]
+        image = 'train/' + image
         basename = image.split('.jpg')[0]
         pred_ls.append(basename)
         f = open('../rfcn/Annotations/' + basename + '.xml','w') 
@@ -112,26 +113,31 @@ if annotations:
         line = '</annotation>'
         f.write(line)
         f.close()
-
+        
+    # Create the train val datasets
     if not os.path.exists('../rfcn/ImageSets'):
         os.mkdir('../rfcn/ImageSets')
     if not os.path.exists('../rfcn/ImageSets/Main'):
         os.mkdir('../rfcn/ImageSets/Main')
-    files = glob.glob('../rfcn/ImageSets/Main/*')
-    for f in files:
-        os.remove(f)
+               
+    files = glob.glob('../data/test/*')
+    for i in range(1,4):
+        files += glob.glob('../data/train/Type_' + str(i) + '/*')
+        files += glob.glob('../data/Type_' + str(i) + '/*')
+    files = [f.replace('../data/', '').replace('.jpg', '') for f in files]
     
-    trn_img = [val for val in pred_ls if int(val.split('_')[0])%2==0]
-    tst_img = [val for val in pred_ls if int(val.split('_')[0])%2==1]
+    trn_img = bboxdf.img.unique().tolist()
+    trn_img = ['train/' + f.replace('.jpg', '') for f in trn_img]
+    tst_img = list(set(files) - set(trn_img))
     
-    with open('../data/ImageSets/Main/trainval.txt','w') as f:
+    with open('../rfcn/ImageSets/Main/trainval.txt','w') as f:
         for im in trn_img:
             f.write(im + '\n')
     
-    with open('../data/ImageSets/Main/train.txt','w') as f:
+    with open('../rfcn/ImageSets/Main/train.txt','w') as f:
         for im in trn_img:
             f.write(im + '\n')
             
-    with open('../data/ImageSets/Main/test.txt','w') as f:
+    with open('../rfcn/ImageSets/Main/test.txt','w') as f:
         for im in tst_img:
             f.write(im + '\n')
