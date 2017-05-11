@@ -1,0 +1,12 @@
+<annotation>
+	<folder>lesion</folder>
+	<filename>train/Type_1/582</filename>
+	<source>
+		<database>Source</database>
+	</source>
+	<size>
+		<width>4128</width>
+		<height>3096</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented></annotation>
