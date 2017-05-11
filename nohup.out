@@ -221,3 +221,31 @@
 [I 20:49:05.811 NotebookApp] Kernel restarted: 63f8b8a0-e65c-4d8e-af8b-3e4273fb90e3
 [I 20:49:22.507 NotebookApp] Saving file at /scripts/resnet50_val_raw-full.ipynb
 [I 20:55:36.586 NotebookApp] Saving file at /scripts/resnet50_val_raw-full.ipynb
+[I 21:04:21.584 NotebookApp] Kernel interrupted: 63f8b8a0-e65c-4d8e-af8b-3e4273fb90e3
+[I 21:04:28.012 NotebookApp] Kernel restarted: 63f8b8a0-e65c-4d8e-af8b-3e4273fb90e3
+[I 21:05:36.564 NotebookApp] Saving file at /scripts/resnet50_val_raw-full.ipynb
+[I 21:09:27.660 NotebookApp] Kernel interrupted: 63f8b8a0-e65c-4d8e-af8b-3e4273fb90e3
+[I 21:09:36.563 NotebookApp] Saving file at /scripts/resnet50_val_raw-full.ipynb
+[I 21:10:08.534 NotebookApp] Kernel restarted: 63f8b8a0-e65c-4d8e-af8b-3e4273fb90e3
+[I 21:13:29.486 NotebookApp] Kernel restarted: 63f8b8a0-e65c-4d8e-af8b-3e4273fb90e3
+[I 21:15:08.641 NotebookApp] Kernel shutdown: 63f8b8a0-e65c-4d8e-af8b-3e4273fb90e3
+[I 21:15:18.391 NotebookApp] Copying scripts/resnet50_val_raw-part.ipynb to /scripts
+[I 21:15:37.993 NotebookApp] Kernel shutdown: bdfd4168-2903-49d7-b669-f8a7a48bc464
+[W 21:15:52.795 NotebookApp] delete /scripts/resnet50_val_raw-full.ipynb
+[I 21:15:55.745 NotebookApp] Kernel started: e26e4693-7953-4a5d-aedb-230edbfbc076
+[I 21:16:12.175 NotebookApp] Saving file at /scripts/resnet50_val_raw-part-V2.ipynb
+[I 21:16:56.932 NotebookApp] Saving file at /scripts/resnet50_val_raw-part-V2.ipynb
+[I 21:17:03.546 NotebookApp] Kernel restarted: e26e4693-7953-4a5d-aedb-230edbfbc076
+[I 21:17:55.773 NotebookApp] Saving file at /scripts/resnet50_val_raw-part-V2.ipynb
+[I 21:18:10.032 NotebookApp] Kernel restarted: e26e4693-7953-4a5d-aedb-230edbfbc076
+[I 21:18:17.677 NotebookApp] Saving file at /scripts/resnet50_val_raw-part-V2.ipynb
+[I 21:19:00.103 NotebookApp] Kernel restarted: e26e4693-7953-4a5d-aedb-230edbfbc076
+[I 21:19:55.783 NotebookApp] Saving file at /scripts/resnet50_val_raw-part-V2.ipynb
+[I 21:25:55.777 NotebookApp] Saving file at /scripts/resnet50_val_raw-part-V2.ipynb
+[I 22:45:55.714 NotebookApp] Saving file at /scripts/resnet50_val_raw-part-V2.ipynb
+[I 01:13:55.597 NotebookApp] Saving file at /scripts/resnet50_val_raw-part-V2.ipynb
+[I 06:36:07.515 NotebookApp] Kernel interrupted: e26e4693-7953-4a5d-aedb-230edbfbc076
+[I 06:37:55.329 NotebookApp] Saving file at /scripts/resnet50_val_raw-part-V2.ipynb
+[C 06:38:20.669 NotebookApp] received signal 15, stopping
+[I 06:38:20.670 NotebookApp] Shutting down kernels
+[I 06:38:20.971 NotebookApp] Kernel shutdown: e26e4693-7953-4a5d-aedb-230edbfbc076
