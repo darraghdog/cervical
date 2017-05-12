@@ -70,15 +70,22 @@ for direc in subdir:
             counter+=1
 df = pd.DataFrame(img_id_hash,columns=['SubDirectory', 'file_name', 'image_hash'])
 
+## Now lets just do a sort and cut the first 25% to get our validation set
+#df = df.sort(['SubDirectory', 'image_hash'], axis = 0)
+#val_img = []
+#for typ in df.SubDirectory.unique():
+#    dftmp  = df[df['SubDirectory'] == typ]
+#    val_len = int(dftmp.shape[0]*val_size)
+#    val_img += dftmp.file_name.values[:val_len].tolist()
+#df.head()
+#df.tail()
+
 # Now lets just do a sort and cut the first 25% to get our validation set
-df = df.sort(['SubDirectory', 'image_hash'], axis = 0)
+df = df.sort(['image_hash'], axis = 0)
 val_img = []
-for typ in df.SubDirectory.unique():
-    dftmp  = df[df['SubDirectory'] == typ]
-    val_len = int(dftmp.shape[0]*val_size)
-    val_img += dftmp.file_name.values[:val_len].tolist()
-df.head()
-df.tail()
+val_len = int(df.shape[0]*val_size)
+for c, row in df[:val_len].reset_index(drop=True).iterrows():
+    val_img.append(row[0] + '/' + row[1])
 
 fo = open('../val_images.csv','w')
 for i in val_img:

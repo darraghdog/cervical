@@ -1,0 +1,7 @@
+- Move current directory in VOC0712 to backup in /home/ubuntu/py-R-FCN/data/VOCdevkit0712/
+- Make directory VOC0712 in /home/ubuntu/py-R-FCN/data/VOCdevkit0712/
+- Copy from cervical/rfcn to the above VOC0712 directory, the folders Annotations and ImageSets files
+- Under VOC0712 create the directory JPEGImages
+- Move the image data set from cervical/data, under the current directory structure to JPEGImages
+- change file ./experiments/scripts/rfcn_end2end_noaa.sh for have a pascal noaa iterations of 10000. 
+
