@@ -1,0 +1,86 @@
+[I 15:28:19.800 NotebookApp] [nb_conda_kernels] enabled, 2 kernels found
+[I 15:28:19.804 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[W 15:28:22.963 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
+[I 15:28:23.490 NotebookApp] ✓ nbpresent HTML export ENABLED
+[W 15:28:23.491 NotebookApp] ✗ nbpresent PDF export DISABLED: No module named nbbrowserpdf.exporters.pdf
+[I 15:28:23.494 NotebookApp] [nb_conda] enabled
+[I 15:28:25.623 NotebookApp] [nb_anacondacloud] enabled
+[I 15:28:25.807 NotebookApp] Serving notebooks from local directory: /home/ubuntu/cervical/scripts
+[I 15:28:25.807 NotebookApp] 0 active kernels 
+[I 15:28:25.807 NotebookApp] The Jupyter Notebook is running at: http://[all ip addresses on your system]:8888/
+[I 15:28:25.808 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 15:28:43.326 NotebookApp] 302 GET / (176.61.36.2) 0.70ms
+[I 15:28:43.342 NotebookApp] 302 GET /tree (176.61.36.2) 0.84ms
+[I 15:28:47.476 NotebookApp] 302 POST /login?next=%2Ftree (176.61.36.2) 0.86ms
+[W 15:29:01.246 NotebookApp] delete /resnet50_val_crop-V1.ipynb
+[I 15:29:06.963 NotebookApp] Kernel started: 2eecf6e7-053e-4880-9181-479d9a591fe5
+[I 15:31:06.586 NotebookApp] Saving file at /resnet50_val_dmcrop-V1.ipynb
+[I 15:32:56.751 NotebookApp] Kernel restarted: 2eecf6e7-053e-4880-9181-479d9a591fe5
+[I 15:33:06.559 NotebookApp] Saving file at /resnet50_val_dmcrop-V1.ipynb
+[I 15:33:35.508 NotebookApp] Saving file at /resnet50_val_dmcrop-V1.ipynb
+[I 15:35:41.768 NotebookApp] Saving file at /resnet50_val_dmcrop-V1.ipynb
+[I 15:35:56.849 NotebookApp] Kernel restarted: 2eecf6e7-053e-4880-9181-479d9a591fe5
+[I 15:37:06.563 NotebookApp] Saving file at /resnet50_val_dmcrop-V1.ipynb
+[I 15:39:06.561 NotebookApp] Saving file at /resnet50_val_dmcrop-V1.ipynb
+[I 15:41:06.560 NotebookApp] Saving file at /resnet50_val_dmcrop-V1.ipynb
+[I 15:43:06.561 NotebookApp] Saving file at /resnet50_val_dmcrop-V1.ipynb
+[I 15:45:06.562 NotebookApp] Saving file at /resnet50_val_dmcrop-V1.ipynb
+[I 15:47:07.137 NotebookApp] Saving file at /resnet50_val_dmcrop-V1.ipynb
+[I 15:49:07.184 NotebookApp] Saving file at /resnet50_val_dmcrop-V1.ipynb
+[I 15:50:35.341 NotebookApp] Saving file at /resnet50_val_dmcrop-V1.ipynb
+[I 15:50:38.265 NotebookApp] Saving file at /resnet50_val_dmcrop-V1.ipynb
+[I 15:50:47.371 NotebookApp] Kernel started: d768659f-8373-4f67-9f20-1c73c92b6ac1
+[I 15:51:06.549 NotebookApp] Saving file at /resnet50_val_dmcrop-V1.ipynb
+[I 15:52:08.450 NotebookApp] Kernel restarted: 2eecf6e7-053e-4880-9181-479d9a591fe5
+[I 15:53:06.566 NotebookApp] Saving file at /resnet50_val_dmcrop-V1.ipynb
+[I 15:55:06.551 NotebookApp] Saving file at /resnet50_val_dmcrop-V1.ipynb
+[I 15:56:48.823 NotebookApp] Kernel restarted: 2eecf6e7-053e-4880-9181-479d9a591fe5
+[I 15:57:06.548 NotebookApp] Saving file at /resnet50_val_dmcrop-V1.ipynb
+[I 15:58:31.217 NotebookApp] Kernel restarted: 2eecf6e7-053e-4880-9181-479d9a591fe5
+[I 15:59:06.552 NotebookApp] Saving file at /resnet50_val_dmcrop-V1.ipynb
+[I 16:01:06.547 NotebookApp] Saving file at /resnet50_val_dmcrop-V1.ipynb
+[I 16:01:12.858 NotebookApp] Saving file at /resnet50_val_dmcrop-V1.ipynb
+[I 16:03:06.550 NotebookApp] Saving file at /resnet50_val_dmcrop-V1.ipynb
+[I 16:05:06.544 NotebookApp] Saving file at /resnet50_val_dmcrop-V1.ipynb
+[I 16:07:06.539 NotebookApp] Saving file at /resnet50_val_dmcrop-V1.ipynb
+[I 16:09:06.549 NotebookApp] Saving file at /resnet50_val_dmcrop-V1.ipynb
+[I 16:11:06.549 NotebookApp] Saving file at /resnet50_val_dmcrop-V1.ipynb
+[I 16:13:06.548 NotebookApp] Saving file at /resnet50_val_dmcrop-V1.ipynb
+[I 16:15:06.565 NotebookApp] Saving file at /resnet50_val_dmcrop-V1.ipynb
+[I 16:16:22.378 NotebookApp] Saving file at /resnet50_val_dmcrop-V1.ipynb
+[I 16:17:06.540 NotebookApp] Saving file at /resnet50_val_dmcrop-V1.ipynb
+[I 16:17:27.094 NotebookApp] Saving file at /resnet50_val_dmcrop-V1.ipynb
+[I 16:17:32.420 NotebookApp] Kernel restarted: 2eecf6e7-053e-4880-9181-479d9a591fe5
+[I 16:18:21.412 NotebookApp] Kernel restarted: 2eecf6e7-053e-4880-9181-479d9a591fe5
+[I 16:19:06.541 NotebookApp] Saving file at /resnet50_val_dmcrop-V1.ipynb
+[I 16:23:27.074 NotebookApp] Saving file at /resnet50_val_dmcrop-V1.ipynb
+[I 16:47:07.130 NotebookApp] Saving file at /resnet50_val_dmcrop-V1.ipynb
+[I 17:13:06.491 NotebookApp] Saving file at /resnet50_val_dmcrop-V1.ipynb
+[I 17:15:06.488 NotebookApp] Saving file at /resnet50_val_dmcrop-V1.ipynb
+[I 17:47:07.074 NotebookApp] Saving file at /resnet50_val_dmcrop-V1.ipynb
+[I 17:47:25.923 NotebookApp] Kernel interrupted: 2eecf6e7-053e-4880-9181-479d9a591fe5
+[I 17:49:06.465 NotebookApp] Saving file at /resnet50_val_dmcrop-V1.ipynb
+[I 17:56:27.894 NotebookApp] Saving file at /resnet50_val_dmcrop-V1.ipynb
+[I 18:17:02.988 NotebookApp] Kernel interrupted: 2eecf6e7-053e-4880-9181-479d9a591fe5
+[I 18:17:06.440 NotebookApp] Saving file at /resnet50_val_dmcrop-V1.ipynb
+[I 18:17:10.178 NotebookApp] Copying resnet50_val_dmcrop-V1.ipynb to 
+[I 18:17:11.994 NotebookApp] Kernel started: 9a698419-7db8-416e-887a-dbbd0c9c00ee
+[I 18:33:11.737 NotebookApp] Saving file at /resnet50_full_dmcrop-V1.ipynb
+[I 18:33:47.922 NotebookApp] Saving file at /resnet50_full_dmcrop-V1.ipynb
+[I 18:33:53.153 NotebookApp] Kernel restarted: 9a698419-7db8-416e-887a-dbbd0c9c00ee
+[I 18:33:59.798 NotebookApp] Kernel restarted: 9a698419-7db8-416e-887a-dbbd0c9c00ee
+[I 18:34:23.389 NotebookApp] Saving file at /resnet50_full_dmcrop-V1.ipynb
+[I 18:34:26.904 NotebookApp] Kernel restarted: 9a698419-7db8-416e-887a-dbbd0c9c00ee
+[I 18:35:12.016 NotebookApp] Saving file at /resnet50_full_dmcrop-V1.ipynb
+[I 19:07:13.019 NotebookApp] Saving file at /resnet50_full_dmcrop-V1.ipynb
+[I 20:19:12.968 NotebookApp] Saving file at /resnet50_full_dmcrop-V1.ipynb
+[I 20:23:12.929 NotebookApp] Saving file at /resnet50_full_dmcrop-V1.ipynb
+[W 20:24:24.737 NotebookApp] 404 GET /recordings/index.php (163.172.109.120) 7.25ms referer=None
+[I 20:27:12.925 NotebookApp] Saving file at /resnet50_full_dmcrop-V1.ipynb
+[I 20:29:11.932 NotebookApp] Saving file at /resnet50_full_dmcrop-V1.ipynb
+[W 20:30:51.999 NotebookApp] 404 GET /sub/sub_dara_full_resnet_dmcrop_5xbag_20170513.csv (176.61.36.2) 1.20ms referer=None
+[W 20:30:59.746 NotebookApp] 404 GET /sub/sub_dara_full_resnet_dmcrop_5xbag_20170513.csv (176.61.36.2) 1.19ms referer=http://ec2-52-17-231-187.eu-west-1.compute.amazonaws.com:8888/notebooks/resnet50_full_dmcrop-V1.ipynb
+[W 20:31:07.423 NotebookApp] 404 GET /sub/sub_dara_full_resnet_dmcrop_5xbag_20170513.csv (176.61.36.2) 1.21ms referer=None
+[I 20:31:12.630 NotebookApp] Saving file at /resnet50_full_dmcrop-V1.ipynb
+[I 20:32:58.822 NotebookApp] Saving file at /resnet50_full_dmcrop-V1.ipynb
+[I 20:48:42.877 NotebookApp] Saving file at /resnet50_full_dmcrop-V1.ipynb
