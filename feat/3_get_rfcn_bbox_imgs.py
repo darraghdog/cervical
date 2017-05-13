@@ -47,7 +47,14 @@ def create_rect_raw(row):
 
 rfcn = pd.read_csv('../features/comp4_det_additional_lesion.txt', sep = ' ', header = None,\
         names = ['img', 'proba', 'x0', 'y0', 'x1', 'y1'])
-rfcn = rfcn[rfcn['proba']>0.7].reset_index(drop=True)
+rfcn = rfcn[rfcn['proba']>0.8].reset_index(drop=True)
+
+# Number of test files
+print(rfcn[rfcn.img.str.contains('test')]['img'].unique().shape)
+print(rfcn[rfcn.img.str.contains('test')].shape)
+
+# 
+rfcn = rfcn.loc[rfcn.groupby('img').proba.idxmax()]
 
 if validate:
     samps = range(20)
@@ -79,8 +86,13 @@ rfcn['img'] = rfcn['img'] + '.jpg'
 
 rfcn['w'] = rfcn['x1'] - rfcn['x0']
 rfcn['h'] = rfcn['y1'] - rfcn['y0']
+
+rfcn['annotation_type'] = 'prediction'
+bboxdf['annotation_type'] = 'manual'
 cols = bboxdf.columns.tolist()
 bbox = pd.concat([bboxdf[cols], rfcn[cols]], axis = 0)
+bbox.to_csv("../features/rfcn_predictions_and_manual_annotations.csv", index= None)
+bbox = bbox.drop(['annotation_type'], axis=1)
 
 # Load theimage sizes
 img_sizes = []
@@ -90,7 +102,6 @@ img_sizes = pd.DataFrame(img_sizes, columns=['img_w', 'img_h'])
 bbox['img_w'], bbox['img_h'] = img_sizes['img_w'], img_sizes['img_h']
 
 # Make the boundary box square and not fall over the edge of the image
-
 bbox['dim'] = bbox[['h', 'w']].max(axis=1).clip(lower=MIN_DIMENSION)
 bbox['dim'] = bbox[['img_h', 'img_w', 'dim']].min(axis=1)
 bbox['h_diff'] = bbox['dim'] - bbox['h']
@@ -133,5 +144,9 @@ if SAVE_BBOX:
     for c, row in bbox.iterrows():
         if c % 100 == 0 :print c
         img = imread(DATADIR + '/%s'%(row['img'])) 
-        img = img[int(row['y0']):int(row['y1']), int(row['x0']):int(row['x1'])] # crop it in numpy direct
-        imsave(DATACROPDIR + '/%s'%(row['img']), img)
+        try:
+            img = img[int(row['y0']):int(row['y1']), int(row['x0']):int(row['x1'])] # crop it in numpy direct
+            imsave(DATACROPDIR + '/%s'%(row['img']), img)
+        except:
+            pass
+        
