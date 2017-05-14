@@ -249,3 +249,78 @@
 [C 06:38:20.669 NotebookApp] received signal 15, stopping
 [I 06:38:20.670 NotebookApp] Shutting down kernels
 [I 06:38:20.971 NotebookApp] Kernel shutdown: e26e4693-7953-4a5d-aedb-230edbfbc076
+[I 07:53:05.032 NotebookApp] [nb_conda_kernels] enabled, 2 kernels found
+[I 07:53:05.169 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[W 07:53:09.355 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
+[I 07:53:09.890 NotebookApp] ✓ nbpresent HTML export ENABLED
+[W 07:53:09.890 NotebookApp] ✗ nbpresent PDF export DISABLED: No module named nbbrowserpdf.exporters.pdf
+[I 07:53:09.894 NotebookApp] [nb_conda] enabled
+[I 07:53:11.756 NotebookApp] [nb_anacondacloud] enabled
+[I 07:53:12.585 NotebookApp] Serving notebooks from local directory: /home/ubuntu/cervical
+[I 07:53:12.585 NotebookApp] 0 active kernels 
+[I 07:53:12.585 NotebookApp] The Jupyter Notebook is running at: http://[all ip addresses on your system]:8888/
+[I 07:53:12.585 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 07:53:27.785 NotebookApp] 302 GET / (176.61.36.2) 0.61ms
+[I 07:53:27.798 NotebookApp] 302 GET /tree (176.61.36.2) 0.96ms
+[I 07:53:35.765 NotebookApp] 302 POST /login?next=%2Ftree (176.61.36.2) 0.85ms
+[I 07:54:01.431 NotebookApp] Copying scripts/resnet50_val_dmcrop-V1.ipynb to /scripts
+[I 07:54:26.911 NotebookApp] Kernel started: 8753e4b7-a049-4659-8238-d7697fb8da03
+[I 07:54:38.236 NotebookApp] Kernel restarted: 8753e4b7-a049-4659-8238-d7697fb8da03
+[I 07:55:10.717 NotebookApp] Kernel started: 80455609-5725-471b-a432-fc27f854bc4a
+[I 07:56:26.881 NotebookApp] Saving file at /scripts/resnet50_val_rfcncrop-V1.ipynb
+[I 07:58:03.261 NotebookApp] Saving file at /scripts/resnet50_val_rfcncrop-V1.ipynb
+[I 07:58:18.607 NotebookApp] Kernel restarted: 8753e4b7-a049-4659-8238-d7697fb8da03
+[I 07:58:26.885 NotebookApp] Saving file at /scripts/resnet50_val_rfcncrop-V1.ipynb
+[I 07:58:58.355 NotebookApp] Kernel interrupted: 8753e4b7-a049-4659-8238-d7697fb8da03
+[I 07:59:03.310 NotebookApp] Kernel restarted: 8753e4b7-a049-4659-8238-d7697fb8da03
+[I 08:00:26.887 NotebookApp] Saving file at /scripts/resnet50_val_rfcncrop-V1.ipynb
+[I 08:00:56.394 NotebookApp] Kernel restarted: 8753e4b7-a049-4659-8238-d7697fb8da03
+[I 08:01:11.687 NotebookApp] Saving file at /scripts/resnet50_val_rfcncrop-V1.ipynb
+[I 08:02:26.878 NotebookApp] Saving file at /scripts/resnet50_val_rfcncrop-V1.ipynb
+[I 08:30:26.897 NotebookApp] Saving file at /scripts/resnet50_val_rfcncrop-V1.ipynb
+[I 08:32:25.381 NotebookApp] Kernel interrupted: 8753e4b7-a049-4659-8238-d7697fb8da03
+[I 08:32:26.865 NotebookApp] Saving file at /scripts/resnet50_val_rfcncrop-V1.ipynb
+[I 08:32:37.864 NotebookApp] Kernel restarted: 8753e4b7-a049-4659-8238-d7697fb8da03
+[I 08:33:15.184 NotebookApp] Saving file at /scripts/resnet50_val_rfcncrop-V1.ipynb
+[I 08:33:47.048 NotebookApp] Saving file at /scripts/resnet50_val_rfcncrop-V1.ipynb
+[I 08:33:53.002 NotebookApp] Kernel restarted: 8753e4b7-a049-4659-8238-d7697fb8da03
+[I 08:34:26.949 NotebookApp] Saving file at /scripts/resnet50_val_rfcncrop-V1.ipynb
+[I 08:36:26.950 NotebookApp] Saving file at /scripts/resnet50_val_rfcncrop-V1.ipynb
+[W 10:33:23.704 NotebookApp] 404 GET http://www.baidu.com/cache/global/img/gs.gif (93.174.93.136) 10.75ms referer=None
+[I 10:57:53.813 NotebookApp] Kernel interrupted: 8753e4b7-a049-4659-8238-d7697fb8da03
+[I 10:58:26.741 NotebookApp] Saving file at /scripts/resnet50_val_rfcncrop-V1.ipynb
+[I 11:03:26.635 NotebookApp] Copying scripts/resnet50_val_dmcrop-V1.ipynb to /scripts
+[I 11:03:26.729 NotebookApp] Copying scripts/resnet50_val_rfcncrop-V1.ipynb to /scripts
+[I 11:03:34.133 NotebookApp] Kernel shutdown: 80455609-5725-471b-a432-fc27f854bc4a
+[I 11:03:35.287 NotebookApp] Kernel shutdown: 8753e4b7-a049-4659-8238-d7697fb8da03
+[I 11:04:06.105 NotebookApp] Kernel started: aed68d59-6fc6-4709-ab8b-8480f5254fd3
+[I 11:04:53.457 NotebookApp] Kernel restarted: aed68d59-6fc6-4709-ab8b-8480f5254fd3
+[I 11:06:05.090 NotebookApp] Kernel interrupted: aed68d59-6fc6-4709-ab8b-8480f5254fd3
+[I 11:06:06.144 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-V2.ipynb
+[I 11:06:31.552 NotebookApp] Kernel restarted: aed68d59-6fc6-4709-ab8b-8480f5254fd3
+[I 11:08:06.808 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-V2.ipynb
+[I 11:09:44.246 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-V2.ipynb
+[I 11:09:52.446 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-V2.ipynb
+[I 11:11:03.925 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-V2.ipynb
+[I 11:38:06.835 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-V2.ipynb
+[I 11:46:06.124 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-V2.ipynb
+[I 11:58:06.798 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-V2.ipynb
+[I 12:06:06.778 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-V2.ipynb
+[I 12:29:13.190 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-V2.ipynb
+[I 12:29:25.339 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-V2.ipynb
+[I 12:34:06.744 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-V2.ipynb
+[I 12:36:06.735 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-V2.ipynb
+[I 12:41:22.996 NotebookApp] Kernel interrupted: aed68d59-6fc6-4709-ab8b-8480f5254fd3
+[I 12:44:34.346 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-V2.ipynb
+[I 14:40:06.711 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-V2.ipynb
+[I 17:19:18.484 NotebookApp] Kernel shutdown: aed68d59-6fc6-4709-ab8b-8480f5254fd3
+[W 17:19:32.244 NotebookApp] delete /scripts/resnet50_val_rfcncrop-V1-Copy1.ipynb
+[I 17:19:35.220 NotebookApp] Kernel started: 78fc970e-c98c-4cd2-8494-e12105fcb52d
+[I 17:20:05.386 NotebookApp] Kernel started: 744823a8-8eec-49af-ae90-733fa7ec9d06
+[I 17:20:26.713 NotebookApp] Saving file at /scripts/resnet50_val_rfcncrop-V1.ipynb
+[I 17:20:48.153 NotebookApp] Copying scripts/resnet50_val_rfcncrop-V1.ipynb to /scripts
+[I 17:20:49.991 NotebookApp] Kernel started: f87358d4-3f99-436e-b35e-0b3d8c561ff2
+[I 17:21:22.065 NotebookApp] Kernel restarted: f87358d4-3f99-436e-b35e-0b3d8c561ff2
+[I 17:21:57.827 NotebookApp] Saving file at /scripts/resnet50_val_rfcncrop-V2.ipynb
+[I 17:22:50.503 NotebookApp] Saving file at /scripts/resnet50_val_rfcncrop-V2.ipynb
+[I 17:24:50.497 NotebookApp] Saving file at /scripts/resnet50_val_rfcncrop-V2.ipynb

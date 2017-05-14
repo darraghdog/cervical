@@ -84,3 +84,8 @@
 [I 20:31:12.630 NotebookApp] Saving file at /resnet50_full_dmcrop-V1.ipynb
 [I 20:32:58.822 NotebookApp] Saving file at /resnet50_full_dmcrop-V1.ipynb
 [I 20:48:42.877 NotebookApp] Saving file at /resnet50_full_dmcrop-V1.ipynb
+[I 20:52:15.789 NotebookApp] Kernel shutdown: 9a698419-7db8-416e-887a-dbbd0c9c00ee
+[I 20:52:16.192 NotebookApp] Kernel shutdown: d768659f-8373-4f67-9f20-1c73c92b6ac1
+[I 20:52:26.152 NotebookApp] Copying resnet50_val_dmcrop-V1.ipynb to 
+[I 20:52:32.839 NotebookApp] Kernel shutdown: 2eecf6e7-053e-4880-9181-479d9a591fe5
+[W 20:52:38.805 NotebookApp] delete /resnet50_val_dmcrop-V1-Copy1.ipynb
