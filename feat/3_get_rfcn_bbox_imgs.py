@@ -19,11 +19,8 @@ import warnings
 warnings.filterwarnings('ignore')
 
 os.chdir('/home/darragh/Dropbox/cervical/feat')
-validate = False
-annotations = True
-SAVE_BBOX = False
-bbimg_trn = False
-bbimg_tst = False # this is the big one
+validate = True
+SAVE_BBOX = True
 TESTDIR = '../data/test'
 TRAINDIR = '../data/train'
 DATACROPDIR = '../data/rfcn_crop'
@@ -31,7 +28,7 @@ TESTCROPDIR = '../data/rfcn_crop/test'
 TRAINCROPDIR = '../data/rfcn_train'
 DATADIR = '../data'
 ROWS, COLS = 224, 224
-MIN_DIMENSION = 224*5
+MIN_DIMENSION = 224*7
 
 def create_rect(row):
     w, h = row['x1'] - row['x0'], row['y1'] - row['y0']
@@ -47,7 +44,7 @@ def create_rect_raw(row):
 
 rfcn = pd.read_csv('../features/comp4_det_additional_lesion.txt', sep = ' ', header = None,\
         names = ['img', 'proba', 'x0', 'y0', 'x1', 'y1'])
-rfcn = rfcn[rfcn['proba']>0.8].reset_index(drop=True)
+rfcn = rfcn[rfcn['proba']>0.9].reset_index(drop=True)
 
 # Number of test files
 print(rfcn[rfcn.img.str.contains('test')]['img'].unique().shape)
@@ -124,14 +121,12 @@ bbox['w']-bbox['h']
 
 
 if validate:
-    samps = range(6000,6010)
+    samps = range(4000,4010)
     for c, row in bbox.iloc[samps].iterrows():
         img = imread(DATADIR + '/%s'%(row['img']))
         plt.figure(figsize=(8,6))
         plt.imshow(img)
         plt.gca().add_patch(create_rect_raw(row))
-
-bbox[63:64]
 
 if SAVE_BBOX:
     # Create the train val datasets
