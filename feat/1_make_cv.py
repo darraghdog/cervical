@@ -16,7 +16,7 @@ import random
 random.seed(100);
 
 # Set working directory
-# os.chdir('/home/darragh/Dropbox/cervical/feat')
+os.chdir('/home/darragh/Dropbox/cervical/feat')
 os.chdir('../data')
 
 def hamdist(hash_set):
@@ -69,19 +69,10 @@ for direc in subdir:
             img_id_hash.append([direc, name, img_hash])
             counter+=1
 df = pd.DataFrame(img_id_hash,columns=['SubDirectory', 'file_name', 'image_hash'])
-
-## Now lets just do a sort and cut the first 25% to get our validation set
-#df = df.sort(['SubDirectory', 'image_hash'], axis = 0)
-#val_img = []
-#for typ in df.SubDirectory.unique():
-#    dftmp  = df[df['SubDirectory'] == typ]
-#    val_len = int(dftmp.shape[0]*val_size)
-#    val_img += dftmp.file_name.values[:val_len].tolist()
-#df.head()
-#df.tail()
+df = df.sort(['image_hash'], axis = 0).reset_index(drop=True)
+df.to_csv("../features/hash_table_raw.csv", index = False)
 
 # Now lets just do a sort and cut the first 25% to get our validation set
-df = df.sort(['image_hash'], axis = 0)
 val_img = []
 val_len = int(df.shape[0]*val_size)
 for c, row in df[:val_len].reset_index(drop=True).iterrows():
@@ -91,3 +82,10 @@ fo = open('../val_images.csv','w')
 for i in val_img:
     fo.write('%s\n'%(i))
 fo.close()	
+
+# Now we split into CV 5-fold
+val_split = []
+for i in range(5):
+    val_split += [i]*((df.shape[0]/5)+1)
+df['fold'] = val_split[:df.shape[0]]
+df.to_csv("../cv_split.csv", index = False)
