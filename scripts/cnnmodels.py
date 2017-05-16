@@ -4,6 +4,7 @@ import numpy as np
 from PIL import Image
 import gc, math
 import pickle
+import bcolz
 
 from keras.models import Sequential
 from keras.optimizers import SGD
@@ -23,6 +24,12 @@ from sklearn.metrics import log_loss, accuracy_score, confusion_matrix
 
 # Generic models
 # Functions
+def save_array(fname, arr):
+    c=bcolz.carray(arr, rootdir=fname, mode='w')
+    c.flush()
+
+def load_array(fname):
+    return bcolz.open(fname)[:]
 def preprocess_input(x):
     #resnet50 image preprocessing
     # 'RGB'->'BGR'

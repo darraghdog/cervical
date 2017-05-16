@@ -420,3 +420,85 @@ Created new window in existing browser session.
 [I 15:04:01.264 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
 [I 15:04:39.162 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
 [I 16:03:55.511 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 15:47:55.334 NotebookApp] [nb_conda_kernels] enabled, 2 kernels found
+[I 15:47:55.338 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[W 15:47:59.904 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
+[I 15:48:00.985 NotebookApp] ✓ nbpresent HTML export ENABLED
+[W 15:48:00.985 NotebookApp] ✗ nbpresent PDF export DISABLED: No module named nbbrowserpdf.exporters.pdf
+[I 15:48:00.989 NotebookApp] [nb_conda] enabled
+[I 15:48:03.896 NotebookApp] [nb_anacondacloud] enabled
+[I 15:48:04.218 NotebookApp] Serving notebooks from local directory: /home/ubuntu/cervical
+[I 15:48:04.218 NotebookApp] 0 active kernels 
+[I 15:48:04.218 NotebookApp] The Jupyter Notebook is running at: http://[all ip addresses on your system]:8888/
+[I 15:48:04.218 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 15:49:10.745 NotebookApp] 302 GET / (176.61.36.2) 0.64ms
+[I 15:49:10.842 NotebookApp] 302 GET /tree (176.61.36.2) 0.94ms
+[I 15:49:18.496 NotebookApp] 302 POST /login?next=%2Ftree (176.61.36.2) 0.90ms
+[W 15:49:37.867 NotebookApp] Notebook scripts/resnet50_val_all_v1.ipynb is not trusted
+[I 15:49:45.773 NotebookApp] Kernel started: 816bb983-8955-44f5-8bae-d2e4b3e0d52b
+[I 15:50:07.173 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[W 15:50:07.174 NotebookApp] Saving untrusted notebook scripts/resnet50_val_all_v1.ipynb
+[I 15:50:38.438 NotebookApp] Kernel started: 38624d0a-3e9d-4cbe-8e66-6dcb508214c7
+[I 15:50:52.234 NotebookApp] Kernel started: 9b5cd203-c972-496e-bd32-de9729f7d66c
+[I 15:51:38.541 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[W 15:51:38.541 NotebookApp] Saving untrusted notebook scripts/resnet50_val_all_v1.ipynb
+[I 15:51:43.162 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[W 15:51:43.163 NotebookApp] Saving untrusted notebook scripts/resnet50_val_all_v1.ipynb
+[I 15:53:03.998 NotebookApp] Kernel restarted: 9b5cd203-c972-496e-bd32-de9729f7d66c
+[I 15:53:37.538 NotebookApp] Kernel shutdown: 38624d0a-3e9d-4cbe-8e66-6dcb508214c7
+[I 15:53:38.141 NotebookApp] Kernel shutdown: 9b5cd203-c972-496e-bd32-de9729f7d66c
+[I 15:53:39.994 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[W 15:53:39.994 NotebookApp] Saving untrusted notebook scripts/resnet50_val_all_v1.ipynb
+[I 15:53:58.845 NotebookApp] Kernel restarted: 816bb983-8955-44f5-8bae-d2e4b3e0d52b
+[W 15:53:58.848 NotebookApp] zmq message arrived on closed channel
+[I 15:55:39.995 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 15:59:40.001 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 16:00:41.666 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 16:01:39.993 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 16:21:01.285 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 16:24:44.739 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 16:40:02.752 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 16:40:04.277 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 16:49:39.972 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 18:04:29.076 NotebookApp] Kernel interrupted: 816bb983-8955-44f5-8bae-d2e4b3e0d52b
+[I 18:05:39.885 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 18:07:39.868 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 18:09:39.875 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 18:11:39.874 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 18:13:16.023 NotebookApp] Saving file at /scripts/cnnmodels.py
+[I 18:13:39.877 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 18:13:44.670 NotebookApp] Kernel restarted: 816bb983-8955-44f5-8bae-d2e4b3e0d52b
+[I 18:13:53.870 NotebookApp] Kernel restarted: 816bb983-8955-44f5-8bae-d2e4b3e0d52b
+[I 18:14:25.748 NotebookApp] Kernel restarted: 816bb983-8955-44f5-8bae-d2e4b3e0d52b
+[W 18:14:25.750 NotebookApp] zmq message arrived on closed channel
+[I 18:15:39.878 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 18:18:40.281 NotebookApp] Kernel interrupted: 816bb983-8955-44f5-8bae-d2e4b3e0d52b
+[I 18:19:06.279 NotebookApp] Kernel restarted: 816bb983-8955-44f5-8bae-d2e4b3e0d52b
+[I 18:19:39.892 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 18:19:58.355 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 18:30:14.426 NotebookApp] Kernel interrupted: 816bb983-8955-44f5-8bae-d2e4b3e0d52b
+[I 18:31:39.988 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 18:32:39.282 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 19:01:11.116 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 20:13:15.894 NotebookApp] [nb_conda_kernels] enabled, 2 kernels found
+[W 20:13:16.328 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
+[I 20:13:16.364 NotebookApp] ✓ nbpresent HTML export ENABLED
+[W 20:13:16.364 NotebookApp] ✗ nbpresent PDF export DISABLED: No module named nbbrowserpdf.exporters.pdf
+[I 20:13:16.366 NotebookApp] [nb_conda] enabled
+[I 20:13:16.397 NotebookApp] [nb_anacondacloud] enabled
+[I 20:13:16.399 NotebookApp] Serving notebooks from local directory: /home/ubuntu/cervical
+[I 20:13:16.399 NotebookApp] 0 active kernels 
+[I 20:13:16.399 NotebookApp] The Jupyter Notebook is running at: http://[all ip addresses on your system]:8888/
+[I 20:13:16.399 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 20:13:59.562 NotebookApp] Kernel started: 67b19b9c-1b78-426d-a73e-9fd51f260559
+[I 20:14:09.968 NotebookApp] Kernel restarted: 67b19b9c-1b78-426d-a73e-9fd51f260559
+[I 20:15:59.403 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 20:17:59.399 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 20:27:19.838 NotebookApp] Kernel restarted: 67b19b9c-1b78-426d-a73e-9fd51f260559
+[I 20:27:39.358 NotebookApp] Kernel restarted: 67b19b9c-1b78-426d-a73e-9fd51f260559
+[I 20:27:59.407 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 20:31:59.403 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 20:51:22.216 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 21:08:23.145 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 21:08:35.801 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 21:15:32.811 NotebookApp] Kernel started: 311fdf02-579f-449e-b0af-918c4bc78d55
