@@ -19,6 +19,7 @@ from sklearn.utils import shuffle
 from skimage import measure
 from glob import glob
 import os
+from PIL import Image
 
 
 os.chdir('/home/darragh/Dropbox/cervical/feat')
@@ -28,6 +29,8 @@ ADDITIONAL_DATA = "../data"
 train_files = glob(os.path.join(TRAIN_DATA, "*", "*.jpg"))
 test_files = glob(os.path.join(TEST_DATA, "*.jpg"))
 additional_files = glob(os.path.join(ADDITIONAL_DATA, 'Type_*', "*.jpg"))
+ROWS = 224
+COLS = 224
 
 # train_files = train_files[:3]
 # test_files = test_files[:3]
@@ -145,98 +148,148 @@ def Ra_space(img, Ra_ratio, a_threshold):
     return Ra
 
 
-out = open('../features/rectangles_additional.csv', "w")
-out.write("image_name,type,clss,img_shp_0_init,img_shape1_init,img_shp_0,img_shp_1,sh0_start,sh1_start,sh0_end,sh1_end\n")
-for f in sorted(train_files + test_files + additional_files):
-    print('Go for {}'.format(f))
-    img_id = os.path.basename(f)
-    img_type = 'test'
-    clss = -1
-    if TRAIN_DATA in f:
-        img_type = 'train'
-        clss = int(os.path.basename(os.path.dirname(f)).split('_')[1]) - 1
-    if ADDITIONAL_DATA in f:
-        img_type = 'add'
-        clss = int(os.path.basename(os.path.dirname(f)).split('_')[1]) - 1
+def write_rectangles_csv():
+
+    out = open('../features/cervix-segmentation-gmm.csv', "w")
+    out.write("image_folder,image_name,type,clss,img_shp_0_init,img_shp_1_init,img_shp_0,img_shp_1,sh0_start,sh1_start,sh0_end,sh1_end\n")
+    for f in sorted( train_files + test_files + additional_files): # 
+        print('Go for {}'.format(f))
+        img_dir = os.path.dirname(f).replace('../data/', '')
+        img_id = os.path.basename(f)
+        img_type = 'test'
+        clss = -1
+        if TRAIN_DATA in f:
+            img_type = 'train'
+            try:
+                clss = int(os.path.basename(os.path.dirname(f)).split('_')[1]) - 1
+            except:
+                print('Name split error: {}. Skip it!'.format(f))
+                continue
+        if ADDITIONAL_DATA in f and TEST_DATA not in f:
+            img_type = 'add'
+            img_type = 'train'
+            try:
+                clss = int(os.path.basename(os.path.dirname(f)).split('_')[1]) - 1
+            except:
+                print('Name split error: {}. Skip it!'.format(f))
+                continue
+        
+        try:
+            img = get_image_data(f)
+        except:
+            print('Image read error: {}. Skip it!'.format(f))
+            continue
+        if img is None:
+            print('Problem with image: {}. Skip it!'.format(f))
+            continue
+        initial_shape = img.shape[:2]
+
+        img = cropCircle(img)
+        w = img.shape[0]
+        h = img.shape[1]
+
+        imgLab = cv2.cvtColor(img, cv2.COLOR_RGB2LAB)
+
+        # Saturating the a-channel at 150 helps avoiding wrong segmentation
+        # in the case of close-up cervix pictures where the bloody os is falsly segemented as the cervix.
+        Ra = Ra_space(img, 1.0, 150)
+        a_channel = np.reshape(Ra[:, 1], (w, h))
+        plt.subplot(121)
+        plt.imshow(a_channel)
+
+        g = mixture.GaussianMixture(n_components=2, covariance_type='diag', random_state=0, init_params='kmeans')
+        image_array_sample = shuffle(Ra, random_state=0)[:1000]
+        g.fit(image_array_sample)
+        labels = g.predict(Ra)
+        labels += 1  # Add 1 to avoid labeling as 0 since regionprops ignores the 0-label.
+
+        # The cluster that has the highest a-mean is selected.
+        labels_2D = np.reshape(labels, (w, h))
+        gg_labels_regions = measure.regionprops(labels_2D, intensity_image=a_channel)
+        gg_intensity = [prop.mean_intensity for prop in gg_labels_regions]
+        cervix_cluster = gg_intensity.index(max(gg_intensity)) + 1
+
+        mask = np.zeros((w * h, 1), 'uint8')
+        mask[labels == cervix_cluster] = 255
+        mask_2D = np.reshape(mask, (w, h))
+
+        cc_labels = measure.label(mask_2D, background=0)
+        regions = measure.regionprops(cc_labels)
+        areas = [prop.area for prop in regions]
+
+        regions_label = [prop.label for prop in regions]
+        largestCC_label = regions_label[areas.index(max(areas))]
+        mask_largestCC = np.zeros((w, h), 'uint8')
+        mask_largestCC[cc_labels == largestCC_label] = 255
+
+        img_masked = img.copy()
+        img_masked[mask_largestCC == 0] = (0, 0, 0)
+        img_masked_gray = cv2.cvtColor(img_masked, cv2.COLOR_RGB2GRAY)
+
+        _, thresh_mask = cv2.threshold(img_masked_gray, 0, 255, 0)
+
+        kernel = np.ones((11, 11), np.uint8)
+        thresh_mask = cv2.dilate(thresh_mask, kernel, iterations=1)
+        thresh_mask = cv2.erode(thresh_mask, kernel, iterations=2)
+        _, contours_mask, _ = cv2.findContours(thresh_mask.copy(), cv2.RETR_TREE, cv2.CHAIN_APPROX_NONE)
+
+        try:
+            main_contour = sorted(contours_mask, key=cv2.contourArea, reverse=True)[0]
+        except:
+            print('Contour problem for {}. skip it!'.format(f))
+            continue
+
+        x, y, w, h = cv2.boundingRect(main_contour)
+
+        out.write(img_dir)
+        out.write(',' + img_id)
+        out.write(',' + img_type)
+        out.write(',' + str(clss))
+        out.write(',' + str(initial_shape[0]))
+        out.write(',' + str(initial_shape[1]))
+        out.write(',' + str(img.shape[0]))
+        out.write(',' + str(img.shape[1]))
+        out.write(',' + str(y))
+        out.write(',' + str(x))
+        out.write(',' + str(y + h))
+        out.write(',' + str(x + w))
+        out.write('\n')
     
-    try:
-        img = get_image_data(f)
-    except:
-        print('Image read error: {}. Skip it!'.format(f))
-        continue
-    if img is None:
-        print('Problem with image: {}. Skip it!'.format(f))
-        continue
-    initial_shape = img.shape[:2]
+    out.close()
 
-    img = cropCircle(img)
-    w = img.shape[0]
-    h = img.shape[1]
+if __name__ == '__main__':
+    # Params
+    get_gmm = False
+    
+    # Get borders
+    if get_gmm:
+        write_rectangles_csv()
+    
+    # Create directories
+    if not os.path.exists('../data/gmm'):
+        os.mkdir('../data/gmm')
+        os.mkdir('../data/gmm/test')
+        os.mkdir('../data/gmm/train')
+        for i in range(3) : 
+            os.mkdir('../data/gmm/Type_' + str(i+1))
+            os.mkdir('../data/gmm/train/Type_' + str(i+1))
 
-    imgLab = cv2.cvtColor(img, cv2.COLOR_RGB2LAB)
-
-    # Saturating the a-channel at 150 helps avoiding wrong segmentation
-    # in the case of close-up cervix pictures where the bloody os is falsly segemented as the cervix.
-    Ra = Ra_space(img, 1.0, 150)
-    a_channel = np.reshape(Ra[:, 1], (w, h))
-    plt.subplot(121)
-    plt.imshow(a_channel)
-
-    g = mixture.GaussianMixture(n_components=2, covariance_type='diag', random_state=0, init_params='kmeans')
-    image_array_sample = shuffle(Ra, random_state=0)[:1000]
-    g.fit(image_array_sample)
-    labels = g.predict(Ra)
-    labels += 1  # Add 1 to avoid labeling as 0 since regionprops ignores the 0-label.
-
-    # The cluster that has the highest a-mean is selected.
-    labels_2D = np.reshape(labels, (w, h))
-    gg_labels_regions = measure.regionprops(labels_2D, intensity_image=a_channel)
-    gg_intensity = [prop.mean_intensity for prop in gg_labels_regions]
-    cervix_cluster = gg_intensity.index(max(gg_intensity)) + 1
-
-    mask = np.zeros((w * h, 1), 'uint8')
-    mask[labels == cervix_cluster] = 255
-    mask_2D = np.reshape(mask, (w, h))
-
-    cc_labels = measure.label(mask_2D, background=0)
-    regions = measure.regionprops(cc_labels)
-    areas = [prop.area for prop in regions]
-
-    regions_label = [prop.label for prop in regions]
-    largestCC_label = regions_label[areas.index(max(areas))]
-    mask_largestCC = np.zeros((w, h), 'uint8')
-    mask_largestCC[cc_labels == largestCC_label] = 255
-
-    img_masked = img.copy()
-    img_masked[mask_largestCC == 0] = (0, 0, 0)
-    img_masked_gray = cv2.cvtColor(img_masked, cv2.COLOR_RGB2GRAY)
-
-    _, thresh_mask = cv2.threshold(img_masked_gray, 0, 255, 0)
-
-    kernel = np.ones((11, 11), np.uint8)
-    thresh_mask = cv2.dilate(thresh_mask, kernel, iterations=1)
-    thresh_mask = cv2.erode(thresh_mask, kernel, iterations=2)
-    _, contours_mask, _ = cv2.findContours(thresh_mask.copy(), cv2.RETR_TREE, cv2.CHAIN_APPROX_NONE)
-
-    try:
-        main_contour = sorted(contours_mask, key=cv2.contourArea, reverse=True)[0]
-    except:
-        print('Contour problem for {}. skip it!'.format(f))
-        continue
-
-    x, y, w, h = cv2.boundingRect(main_contour)
-
-    out.write(img_id)
-    out.write(',' + img_type)
-    out.write(',' + str(clss))
-    out.write(',' + str(initial_shape[0]))
-    out.write(',' + str(initial_shape[1]))
-    out.write(',' + str(img.shape[0]))
-    out.write(',' + str(img.shape[1]))
-    out.write(',' + str(y))
-    out.write(',' + str(x))
-    out.write(',' + str(y + h))
-    out.write(',' + str(x + w))
-    out.write('\n')
-
-out.close()
+    # Write images
+    gmm = pd.read_csv('../features/cervix-segmentation-gmm.csv')
+    for c, row in gmm.iterrows():
+        if c % 50 == 0 : print('Processing image {} out of {}'.format(c, gmm.shape[0]))
+        gdir = os.path.join(ADDITIONAL_DATA, row['image_folder'])
+        gimg = row['image_name']
+        gpath = os.path.join(gdir, gimg)
+        img = Image.open(gpath)
+        try:
+            img = img.convert('RGB')
+        except:
+            print('Failed to read {}'.format(gpath))
+            continue
+        y0 = max(0, int(row['sh0_start'] * (float(row['img_shp_0_init']) / row['img_shp_0'])))
+        x0 = max(0, int(row['sh1_start'] * (float(row['img_shp_1_init']) / row['img_shp_1'])))
+        y1 = min(row['img_shp_0_init'], int(row['sh0_end'] * (float(row['img_shp_0_init']) / row['img_shp_0'])))
+        x1 = min(row['img_shp_1_init'], int(row['sh1_end'] * (float(row['img_shp_1_init']) / row['img_shp_1'])))
+        cropped = img.crop((x0, y0, x1, y1)).resize((COLS * 2, ROWS * 2))
+        cropped.save(os.path.join('../data/gmm', row['image_folder'], row['image_name']))

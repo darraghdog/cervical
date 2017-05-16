@@ -335,3 +335,88 @@
 [I 19:22:50.422 NotebookApp] Saving file at /scripts/resnet50_val_rfcncrop-V2.ipynb
 [I 19:24:06.847 NotebookApp] Saving file at /scripts/resnet50_val_rfcncrop-V2.ipynb
 [I 19:24:50.411 NotebookApp] Saving file at /scripts/resnet50_val_rfcncrop-V2.ipynb
+[W 13:57:40.180 NotebookApp] Unrecognized JSON config file version, assuming version 1
+[I 13:57:41.430 NotebookApp] [nb_conda_kernels] enabled, 1 kernels found
+[I 13:57:41.442 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[I 13:57:41.624 NotebookApp] ✓ nbpresent HTML export ENABLED
+[W 13:57:41.625 NotebookApp] ✗ nbpresent PDF export DISABLED: No module named nbbrowserpdf.exporters.pdf
+[I 13:57:41.632 NotebookApp] [nb_conda] enabled
+[I 13:57:41.710 NotebookApp] [nb_anacondacloud] enabled
+[I 13:57:41.713 NotebookApp] Serving notebooks from local directory: /home/darragh/Dropbox/cervical
+[I 13:57:41.713 NotebookApp] 0 active kernels 
+[I 13:57:41.714 NotebookApp] The Jupyter Notebook is running at: http://localhost:8888/
+[I 13:57:41.714 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+Created new window in existing browser session.
+[I 13:58:57.619 NotebookApp] Copying scripts/resnet50_val_raw-part-V2.ipynb to /scripts
+[W 13:58:57.677 NotebookApp] Notebook scripts/resnet50_val_raw-part-V2.ipynb is not trusted
+[W 13:58:57.711 NotebookApp] Saving untrusted notebook scripts/resnet50_val_raw-part-V2-Copy1.ipynb
+[W 14:00:08.208 NotebookApp] Notebook scripts/resnet50_val_all_v1.ipynb is not trusted
+[W 14:00:08.256 NotebookApp] 404 GET /nbextensions/nb_anacondacloud/main.js?v=20170516135741 (127.0.0.1) 10.59ms referer=http://localhost:8888/notebooks/scripts/resnet50_val_all_v1.ipynb
+[I 14:00:09.027 NotebookApp] Kernel started: c592e553-1333-4538-9371-1f796767f788
+[W 14:00:09.041 NotebookApp] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (127.0.0.1) 3.70ms referer=http://localhost:8888/notebooks/scripts/resnet50_val_all_v1.ipynb
+[I 14:02:09.012 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[W 14:02:09.013 NotebookApp] Saving untrusted notebook scripts/resnet50_val_all_v1.ipynb
+[I 14:02:49.732 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[W 14:02:49.732 NotebookApp] Saving untrusted notebook scripts/resnet50_val_all_v1.ipynb
+[I 14:03:00.837 NotebookApp] Kernel restarted: c592e553-1333-4538-9371-1f796767f788
+[I 14:03:57.009 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 14:04:09.006 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 14:06:09.002 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 14:06:42.471 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[W 14:10:43.485 NotebookApp] 404 GET /nbextensions/nb_anacondacloud/main.js?v=20170516135741 (127.0.0.1) 3.28ms referer=http://localhost:8888/notebooks/scripts/resnet50_val_dmcrop-V1.ipynb
+[W 14:10:43.523 NotebookApp] Notebook scripts/resnet50_val_dmcrop-V1.ipynb is not trusted
+[I 14:10:44.162 NotebookApp] Kernel started: 9f4c5ea0-edf2-4371-9032-29134b98fba0
+[W 14:10:44.169 NotebookApp] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (127.0.0.1) 2.14ms referer=http://localhost:8888/notebooks/scripts/resnet50_val_dmcrop-V1.ipynb
+[I 14:12:09.013 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 14:12:44.158 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-V1.ipynb
+[W 14:12:44.160 NotebookApp] Saving untrusted notebook scripts/resnet50_val_dmcrop-V1.ipynb
+[I 14:14:09.003 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 14:16:09.002 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 14:18:09.001 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 14:18:15.997 NotebookApp] Kernel restarted: c592e553-1333-4538-9371-1f796767f788
+[I 14:20:09.002 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 14:21:01.484 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 14:21:20.508 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 14:22:09.003 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 14:24:09.003 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 14:24:20.849 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 14:24:28.558 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 14:26:09.004 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 14:26:30.773 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 14:26:40.647 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 14:26:58.409 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 14:30:09.013 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 14:32:09.003 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 14:34:09.005 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 14:34:32.834 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 14:35:04.391 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 14:36:09.005 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 14:36:55.770 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 14:37:03.613 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 14:40:34.997 NotebookApp] Kernel restarted: c592e553-1333-4538-9371-1f796767f788
+[I 14:41:55.247 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 14:42:09.101 NotebookApp] Kernel restarted: c592e553-1333-4538-9371-1f796767f788
+[I 14:42:38.335 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 14:43:16.662 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 14:44:09.000 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 14:44:28.846 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 14:45:19.798 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 14:45:24.754 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 14:45:44.170 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 14:46:09.002 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 14:46:24.620 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 14:48:09.004 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 14:48:29.082 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 14:50:09.001 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 14:51:25.682 NotebookApp] Kernel restarted: c592e553-1333-4538-9371-1f796767f788
+[I 14:52:09.004 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 14:53:08.308 NotebookApp] Kernel restarted: c592e553-1333-4538-9371-1f796767f788
+[I 14:54:09.001 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 14:54:15.589 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 14:54:30.429 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 14:55:03.651 NotebookApp] Kernel interrupted: c592e553-1333-4538-9371-1f796767f788
+[I 14:56:09.003 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 14:57:32.417 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 15:04:01.264 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 15:04:39.162 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 16:03:55.511 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
