@@ -29,8 +29,8 @@ from keras.callbacks import EarlyStopping, ModelCheckpoint, ReduceLROnPlateau, T
 
 from sklearn.metrics import log_loss, accuracy_score, confusion_matrix
 
-from cnnmodels import vgg_std16_model, preprocess_input, create_rect5, load_img, train_generator, test_generator
-from cnnmodels import identity_block, testcv_generator, conv_block, resnet50_model, save_array, load_array
+from cnnmodels5 import vgg_std16_model, preprocess_input, create_rect5, load_img, train_generator, test_generator
+from cnnmodels5 import identity_block, testcv_generator, conv_block, resnet50_model, save_array, load_array
 
 
 # In[25]:
@@ -50,7 +50,7 @@ TEST_DIRS = ['../data/original/test', '../data/rfcn_crop/test', '../data/gmm/tes
 DATA_DIRS = ['../data/original', '../data/rfcn_crop', '../data/gmm']
 REMOVE_FOLDER = ['../', 'data/', 'cropped/', 'rfcn_crop/', 'gmm/',  'original/']
 num_class = len(CERV_CLASSES)
-full = False
+full = True # False
 bags = 5
 
 
@@ -136,7 +136,7 @@ def train_generator(datagen, df):
             batch_y[i,CERV_CLASSES.index(typ_class)] = 1
             i += 1
             #return (batch_x, batch_y)
-            yield (batch_x.transpose(0, 3, 1, 2), batch_y)
+        yield (batch_x.transpose(0, 3, 1, 2), batch_y)
 
 
 # In[8]:
@@ -272,7 +272,7 @@ for layer in model.layers[-3:]:
     layer.trainable = True
 
 
-model.optimizer.lr = 1e-5
+# model.optimizer.lr = 1e-5
 # Start Fine-tuning
 print "Fine tune part 1"
 model.fit_generator(train_generator(train_datagen, train_df),
@@ -280,7 +280,7 @@ model.fit_generator(train_generator(train_datagen, train_df),
           samples_per_epoch=samples_per_epoch, #40864
           verbose=1,
           validation_data=(valid_x, valid_y),
-          #callbacks=[early_stopping, model_checkpoint],
+          callbacks=[early_stopping, model_checkpoint],
           )
 
 
@@ -294,7 +294,7 @@ model.fit_generator(train_generator(train_datagen, train_df),
           samples_per_epoch=samples_per_epoch, #50000,
           verbose=1,
           validation_data=(valid_x, valid_y),
-          #callbacks=[early_stopping, model_checkpoint],
+          callbacks=[early_stopping, model_checkpoint],
           )
 
 
@@ -311,14 +311,14 @@ start_layer = 164
 model.optimizer.lr = 1e-6
 for layer in model.layers[start_layer:]:
     layer.trainable = True
-nb_epoch = 5
+nb_epoch = 8
 print "Fine tune part 2"
 model.fit_generator(train_generator(train_datagen, df=train_df),
           nb_epoch=nb_epoch,
           samples_per_epoch=samples_per_epoch,
           verbose=1,
           validation_data=(valid_x, valid_y),
-          #callbacks=[model_checkpoint, early_stopping], # , 
+          callbacks=[model_checkpoint, early_stopping], # , 
           )
 
 
@@ -327,6 +327,10 @@ model.fit_generator(train_generator(train_datagen, df=train_df),
 # Hack to solve issue on model loading : https://github.com/fchollet/keras/issues/4044
 import glob
 import h5py
+import time
+timestr = time.strftime("%Y%m%d")
+
+
 model_files = sorted(glob.glob(CHECKPOINT_DIR + '*.hdf5'))
 for model_file in model_files:
     print("Update '{}'".format(model_file))
