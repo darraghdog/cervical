@@ -44,7 +44,7 @@ def create_rect_raw(row):
 
 rfcn = pd.read_csv('../features/comp4_det_additional_lesion.txt', sep = ' ', header = None,\
         names = ['img', 'proba', 'x0', 'y0', 'x1', 'y1'])
-rfcn = rfcn[rfcn['proba']>0.9].reset_index(drop=True)
+rfcn = rfcn[rfcn['proba']>0.8].reset_index(drop=True)
 
 # Number of test files
 print(rfcn[rfcn.img.str.contains('test')]['img'].unique().shape)
@@ -137,11 +137,17 @@ if SAVE_BBOX:
         for i in range(3): os.mkdir('../data/rfcn_crop/Type_'+str(i+1))
         for i in range(3): os.mkdir('../data/rfcn_crop/train/Type_'+str(i+1))
     for c, row in bbox.iterrows():
-        if c % 100 == 0 :print c
-        img = imread(DATADIR + '/%s'%(row['img'])) 
+        if c % 100 == 0 : print('Processing image {} out of {}'.format(c, bbox.shape[0]))
+        input_path = DATADIR + '/%s'%(row['img'])
+        img = Image.open(input_path) 
         try:
-            img = img[int(row['y0']):int(row['y1']), int(row['x0']):int(row['x1'])] # crop it in numpy direct
-            imsave(DATACROPDIR + '/%s'%(row['img']), img)
+            img = img.convert('RGB')
         except:
-            pass
-        
+            print('Failed to read {}'.format(input_path))
+            continue            
+        img = img.crop((int(row['x0']), int(row['y0']), int(row['x1']), int(row['y1']))).resize((COLS * 2, ROWS * 2))        
+        out_path = input_path.replace('../data/', '../data/rfcn_crop/')
+        img.save(out_path)
+
+
+      
