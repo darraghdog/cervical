@@ -512,3 +512,14 @@ Created new window in existing browser session.
 [I 21:59:59.312 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
 [I 22:00:22.449 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
 [I 22:00:34.938 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 22:03:59.318 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 22:06:00.124 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 02:42:45.801 NotebookApp] 302 GET / (80.82.77.139) 0.58ms
+[I 02:42:45.844 NotebookApp] 302 GET /tree (80.82.77.139) 1.19ms
+[W 04:32:36.088 NotebookApp] 404 GET http://www.baidu.com/cache/global/img/gs.gif (93.174.93.136) 7.45ms referer=None
+[I 04:37:59.829 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[I 06:14:28.988 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-V2.ipynb
+[I 06:15:32.741 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-V2.ipynb
+[I 06:25:23.289 NotebookApp] Kernel shutdown: 67b19b9c-1b78-426d-a73e-9fd51f260559
+[I 06:25:23.693 NotebookApp] Kernel shutdown: 311fdf02-579f-449e-b0af-918c4bc78d55
+[I 06:25:41.843 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
