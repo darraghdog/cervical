@@ -523,3 +523,21 @@ Created new window in existing browser session.
 [I 06:25:23.289 NotebookApp] Kernel shutdown: 67b19b9c-1b78-426d-a73e-9fd51f260559
 [I 06:25:23.693 NotebookApp] Kernel shutdown: 311fdf02-579f-449e-b0af-918c4bc78d55
 [I 06:25:41.843 NotebookApp] Saving file at /scripts/resnet50_val_all_v1.ipynb
+[W 14:47:03.066 NotebookApp] 404 GET http://httpheader.net/ (89.248.172.90) 1.97ms referer=None
+[I 06:27:06.790 NotebookApp] 302 GET / (176.61.36.2) 0.43ms
+[I 06:27:37.929 NotebookApp] Copying scripts/resnet50_full_dmcrop-V1.ipynb to /scripts
+[I 06:28:06.222 NotebookApp] Kernel started: ca8aff5e-1fa8-40ec-9683-8714a33bc73e
+[I 06:30:06.300 NotebookApp] Saving file at /scripts/resnet50_full_all-v2.ipynb
+[I 06:32:06.378 NotebookApp] Saving file at /scripts/resnet50_full_all-v2.ipynb
+[I 06:34:06.255 NotebookApp] Saving file at /scripts/resnet50_full_all-v2.ipynb
+[I 06:36:06.253 NotebookApp] Saving file at /scripts/resnet50_full_all-v2.ipynb
+[I 06:38:06.874 NotebookApp] Saving file at /scripts/resnet50_full_all-v2.ipynb
+[I 06:40:06.246 NotebookApp] Saving file at /scripts/resnet50_full_all-v2.ipynb
+[I 06:40:25.436 NotebookApp] Saving file at /scripts/resnet50_full_all-v2.ipynb
+[I 06:41:29.261 NotebookApp] Saving file at /scripts/resnet50_full_all-v2.ipynb
+[I 06:42:54.079 NotebookApp] Kernel restarted: ca8aff5e-1fa8-40ec-9683-8714a33bc73e
+[I 06:43:18.960 NotebookApp] Kernel restarted: ca8aff5e-1fa8-40ec-9683-8714a33bc73e
+[I 06:44:06.241 NotebookApp] Saving file at /scripts/resnet50_full_all-v2.ipynb
+[W 07:12:45.228 NotebookApp] 404 GET http://httpheader.net/ (89.248.172.90) 2.10ms referer=None
+[I 07:38:06.841 NotebookApp] Saving file at /scripts/resnet50_full_all-v2.ipynb
+[W 08:49:43.596 NotebookApp] 404 GET http://www.baidu.com/cache/global/img/gs.gif (93.174.93.136) 1.30ms referer=None
