@@ -594,3 +594,91 @@ Created new window in existing browser session.
 [I 22:22:45.170 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-imgdim-V1.ipynb
 [I 22:23:58.905 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-imgdim-V1.ipynb
 [I 22:24:20.784 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-imgdim-V1.ipynb
+jupyter: 'noebook' is not a Jupyter command
+[I 18:23:53.398 NotebookApp] [nb_conda_kernels] enabled, 2 kernels found
+[I 18:23:53.402 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[W 18:23:55.985 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
+[I 18:23:56.438 NotebookApp] ✓ nbpresent HTML export ENABLED
+[W 18:23:56.438 NotebookApp] ✗ nbpresent PDF export DISABLED: No module named nbbrowserpdf.exporters.pdf
+[I 18:23:56.442 NotebookApp] [nb_conda] enabled
+[I 18:23:58.190 NotebookApp] [nb_anacondacloud] enabled
+[I 18:23:58.316 NotebookApp] Serving notebooks from local directory: /home/ubuntu/cervical
+[I 18:23:58.316 NotebookApp] 0 active kernels 
+[I 18:23:58.316 NotebookApp] The Jupyter Notebook is running at: http://[all ip addresses on your system]:8888/
+[I 18:23:58.316 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 18:24:31.148 NotebookApp] 302 GET / (176.61.36.2) 0.65ms
+[I 18:24:31.166 NotebookApp] 302 GET /tree (176.61.36.2) 0.76ms
+[I 18:24:35.941 NotebookApp] 302 POST /login?next=%2Ftree (176.61.36.2) 0.87ms
+[I 18:24:44.720 NotebookApp] Kernel started: a9d28f4a-d16c-42b3-a59f-11fa1e8db4db
+[I 18:26:45.739 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-imgdim-V1.ipynb
+[I 18:28:44.753 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-imgdim-V1.ipynb
+[I 18:32:45.779 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-imgdim-V1.ipynb
+[I 18:46:45.761 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-imgdim-V1.ipynb
+[I 18:48:45.732 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-imgdim-V1.ipynb
+[I 19:06:45.770 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-imgdim-V1.ipynb
+[I 19:36:44.750 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-imgdim-V1.ipynb
+[I 19:38:45.711 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-imgdim-V1.ipynb
+[I 19:40:44.732 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-imgdim-V1.ipynb
+[I 19:44:58.770 NotebookApp] Kernel restarted: a9d28f4a-d16c-42b3-a59f-11fa1e8db4db
+[I 19:46:45.695 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-imgdim-V1.ipynb
+[I 19:48:44.716 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-imgdim-V1.ipynb
+[I 19:50:44.715 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-imgdim-V1.ipynb
+[I 19:52:02.910 NotebookApp] Kernel restarted: a9d28f4a-d16c-42b3-a59f-11fa1e8db4db
+[I 19:52:44.716 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-imgdim-V1.ipynb
+[I 19:54:04.160 NotebookApp] Kernel restarted: a9d28f4a-d16c-42b3-a59f-11fa1e8db4db
+[I 19:54:44.720 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-imgdim-V1.ipynb
+[I 19:56:44.723 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-imgdim-V1.ipynb
+[I 19:57:14.446 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-imgdim-V1.ipynb
+[I 19:58:44.778 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-imgdim-V1.ipynb
+[I 20:00:44.922 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-imgdim-V1.ipynb
+[I 20:04:30.240 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-imgdim-V1.ipynb
+[I 20:04:39.975 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-imgdim-V1.ipynb
+[W 20:07:08.394 NotebookApp] Notebook scripts/resnet50_val_dmcrop-V1.ipynb is not trusted
+[I 20:07:13.631 NotebookApp] Kernel started: 5e09d2d9-2838-40ff-af07-40da58e8171c
+[I 20:10:44.421 NotebookApp] Kernel interrupted: a9d28f4a-d16c-42b3-a59f-11fa1e8db4db
+[I 20:10:44.706 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-imgdim-V1.ipynb
+[I 20:11:15.942 NotebookApp] Kernel restarted: a9d28f4a-d16c-42b3-a59f-11fa1e8db4db
+[I 20:12:45.797 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-imgdim-V1.ipynb
+[I 20:14:45.684 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-imgdim-V1.ipynb
+[W 20:18:16.577 NotebookApp] Notebook scripts/resnet50_val_dmcrop-V1.ipynb is not trusted
+[I 20:19:15.801 NotebookApp] Kernel interrupted: a9d28f4a-d16c-42b3-a59f-11fa1e8db4db
+[I 20:20:45.701 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-imgdim-V1.ipynb
+[I 20:26:45.713 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-imgdim-V1.ipynb
+[I 20:28:44.707 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-imgdim-V1.ipynb
+[I 20:30:45.685 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-imgdim-V1.ipynb
+[I 20:32:45.684 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-imgdim-V1.ipynb
+[W 20:39:47.452 NotebookApp] Notebook scripts/resnet50_val_dmcrop-V1.ipynb is not trusted
+[I 20:39:51.365 NotebookApp] Kernel shutdown: 5e09d2d9-2838-40ff-af07-40da58e8171c
+[I 20:43:56.891 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-imgdim-V1.ipynb
+[I 20:56:44.713 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-imgdim-V1.ipynb
+[I 20:58:44.677 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-imgdim-V1.ipynb
+[I 21:00:45.653 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-imgdim-V1.ipynb
+[I 21:01:52.743 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-imgdim-V1.ipynb
+[I 21:02:44.671 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-imgdim-V1.ipynb
+[I 21:04:45.650 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-imgdim-V1.ipynb
+[I 21:10:44.699 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-imgdim-V1.ipynb
+[I 21:12:44.667 NotebookApp] Saving file at /scripts/resnet50_val_dmcrop-imgdim-V1.ipynb
+[I 21:33:03.227 NotebookApp] Kernel interrupted: a9d28f4a-d16c-42b3-a59f-11fa1e8db4db
+[I 21:33:29.834 NotebookApp] Kernel shutdown: a9d28f4a-d16c-42b3-a59f-11fa1e8db4db
+[I 21:34:12.676 NotebookApp] Copying scripts/resnet50_val_raw-part-V2.ipynb to /scripts
+[I 21:34:40.825 NotebookApp] Kernel started: 81b07424-c53e-4167-a88d-a418dd9536a3
+[I 21:36:41.604 NotebookApp] Saving file at /scripts/inceptionV4_val_raw-part.ipynb
+[I 21:38:34.208 NotebookApp] Saving file at /scripts/cnnmodels.py
+[I 21:38:59.178 NotebookApp] Saving file at /scripts/cnnmodels.py
+[I 21:40:40.862 NotebookApp] Saving file at /scripts/inceptionV4_val_raw-part.ipynb
+[I 21:41:21.653 NotebookApp] Kernel restarted: 81b07424-c53e-4167-a88d-a418dd9536a3
+[I 21:42:40.851 NotebookApp] Saving file at /scripts/inceptionV4_val_raw-part.ipynb
+[I 21:43:53.585 NotebookApp] Kernel restarted: 81b07424-c53e-4167-a88d-a418dd9536a3
+[I 21:44:41.594 NotebookApp] Saving file at /scripts/inceptionV4_val_raw-part.ipynb
+[I 21:45:45.303 NotebookApp] Kernel started: 603c6ecc-60c3-46f0-8298-af450c87161f
+[I 21:46:33.992 NotebookApp] Kernel restarted: 81b07424-c53e-4167-a88d-a418dd9536a3
+[I 21:46:41.592 NotebookApp] Saving file at /scripts/inceptionV4_val_raw-part.ipynb
+[I 21:47:43.029 NotebookApp] Kernel restarted: 81b07424-c53e-4167-a88d-a418dd9536a3
+[I 21:47:43.942 NotebookApp] Kernel restarted: 81b07424-c53e-4167-a88d-a418dd9536a3
+[I 21:48:37.708 NotebookApp] Kernel restarted: 81b07424-c53e-4167-a88d-a418dd9536a3
+[I 21:48:40.840 NotebookApp] Saving file at /scripts/inceptionV4_val_raw-part.ipynb
+[I 21:50:40.856 NotebookApp] Saving file at /scripts/inceptionV4_val_raw-part.ipynb
+[I 21:50:44.965 NotebookApp] Saving file at /scripts/cnnmodels.py
+[I 21:50:51.987 NotebookApp] Kernel restarted: 81b07424-c53e-4167-a88d-a418dd9536a3
+[I 21:52:40.853 NotebookApp] Saving file at /scripts/inceptionV4_val_raw-part.ipynb
+[I 21:54:40.851 NotebookApp] Saving file at /scripts/inceptionV4_val_raw-part.ipynb
