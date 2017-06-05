@@ -571,7 +571,7 @@ def inception_v4_base(input):
     return net
 
 
-def inception_v4_model(img_rows, img_cols, color_type=1, num_classes=None, dropout_keep_prob=0.2):
+def inception_v4_model(img_rows, img_cols, color_type=1, num_classes=None, dropout_keep_prob=0.2, lr = 1e-3):
     '''
     Inception V4 Model for Keras
     Model Schema is based on
@@ -629,7 +629,7 @@ def inception_v4_model(img_rows, img_cols, color_type=1, num_classes=None, dropo
     model = Model(inputs, predictions_ft, name='inception_v4')
 
     # Learning rate is changed to 0.001
-    sgd = SGD(lr=1e-3, decay=1e-6, momentum=0.9, nesterov=True)
+    sgd = SGD(lr=lr, decay=1e-6, momentum=0.9, nesterov=True)
     model.compile(optimizer=sgd, loss='categorical_crossentropy', metrics=['accuracy'])
 
     return model
