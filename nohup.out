@@ -682,3 +682,83 @@ jupyter: 'noebook' is not a Jupyter command
 [I 21:50:51.987 NotebookApp] Kernel restarted: 81b07424-c53e-4167-a88d-a418dd9536a3
 [I 21:52:40.853 NotebookApp] Saving file at /scripts/inceptionV4_val_raw-part.ipynb
 [I 21:54:40.851 NotebookApp] Saving file at /scripts/inceptionV4_val_raw-part.ipynb
+[I 22:36:40.838 NotebookApp] Saving file at /scripts/inceptionV4_val_raw-part.ipynb
+[I 22:36:47.318 NotebookApp] Kernel restarted: 81b07424-c53e-4167-a88d-a418dd9536a3
+[I 22:38:40.817 NotebookApp] Saving file at /scripts/inceptionV4_val_raw-part.ipynb
+[I 22:42:42.332 NotebookApp] Kernel interrupted: 81b07424-c53e-4167-a88d-a418dd9536a3
+[I 22:43:34.135 NotebookApp] Saving file at /scripts/inceptionV4_val_raw-part.ipynb
+[I 22:46:40.839 NotebookApp] Saving file at /scripts/inceptionV4_val_raw-part.ipynb
+[I 22:47:01.404 NotebookApp] Kernel restarted: 81b07424-c53e-4167-a88d-a418dd9536a3
+[I 22:48:40.826 NotebookApp] Saving file at /scripts/inceptionV4_val_raw-part.ipynb
+[W 00:27:36.493 NotebookApp] 404 GET http://testp3.pospr.waw.pl/testproxy.php (91.196.50.33) 6.99ms referer=None
+[I 02:08:40.690 NotebookApp] Saving file at /scripts/inceptionV4_val_raw-part.ipynb
+[I 04:18:40.616 NotebookApp] Saving file at /scripts/inceptionV4_val_raw-part.ipynb
+[W 04:21:03.544 NotebookApp] 404 GET http://www.baidu.com/cache/global/img/gs.gif (93.174.93.136) 1.17ms referer=None
+[I 07:12:40.506 NotebookApp] Saving file at /scripts/inceptionV4_val_raw-part.ipynb
+[I 07:14:40.483 NotebookApp] Saving file at /scripts/inceptionV4_val_raw-part.ipynb
+[I 07:16:40.479 NotebookApp] Saving file at /scripts/inceptionV4_val_raw-part.ipynb
+[I 07:18:41.233 NotebookApp] Saving file at /scripts/inceptionV4_val_raw-part.ipynb
+[I 07:20:40.495 NotebookApp] Saving file at /scripts/inceptionV4_val_raw-part.ipynb
+[I 07:22:40.481 NotebookApp] Saving file at /scripts/inceptionV4_val_raw-part.ipynb
+[I 07:24:40.495 NotebookApp] Saving file at /scripts/inceptionV4_val_raw-part.ipynb
+[I 07:26:02.179 NotebookApp] Kernel interrupted: 81b07424-c53e-4167-a88d-a418dd9536a3
+[I 07:26:40.535 NotebookApp] Saving file at /scripts/inceptionV4_val_raw-part.ipynb
+[I 07:28:40.471 NotebookApp] Saving file at /scripts/inceptionV4_val_raw-part.ipynb
+[I 07:30:04.012 NotebookApp] Saving file at /scripts/inceptionV4_val_raw-part.ipynb
+[I 07:30:35.060 NotebookApp] Saving file at /scripts/inceptionV4_val_raw-part.ipynb
+[I 07:31:55.232 NotebookApp] 302 GET /notebooks/sub/sub_dara_part_resnet_raw_5xbag_20170521.csv (176.61.36.2) 0.93ms
+[I 07:32:05.046 NotebookApp] 302 GET /notebooks/sub/sub_dara_part_resnet_raw_5xbag_20170521.csv (176.61.36.2) 0.93ms
+[I 07:32:40.498 NotebookApp] Saving file at /scripts/inceptionV4_val_raw-part.ipynb
+[I 07:43:35.835 NotebookApp] Copying scripts/inceptionV4_val_raw-part.ipynb to /scripts
+[I 07:43:37.450 NotebookApp] Kernel started: a286a907-5269-49cb-81d0-a748311734f0
+[I 07:43:53.051 NotebookApp] Kernel restarted: a286a907-5269-49cb-81d0-a748311734f0
+[I 07:44:24.327 NotebookApp] Kernel interrupted: a286a907-5269-49cb-81d0-a748311734f0
+[I 07:44:34.659 NotebookApp] Kernel restarted: a286a907-5269-49cb-81d0-a748311734f0
+[I 07:44:40.286 NotebookApp] Kernel restarted: a286a907-5269-49cb-81d0-a748311734f0
+[I 07:45:38.300 NotebookApp] Saving file at /scripts/inceptionV4_val_raw-part-v2.ipynb
+[I 08:06:15.239 NotebookApp] Kernel restarted: a286a907-5269-49cb-81d0-a748311734f0
+[I 08:06:38.540 NotebookApp] Saving file at /scripts/inceptionV4_val_raw-part-v2.ipynb
+[I 08:06:51.497 NotebookApp] Kernel restarted: a286a907-5269-49cb-81d0-a748311734f0
+[I 08:07:38.178 NotebookApp] Saving file at /scripts/inceptionV4_val_raw-part-v2.ipynb
+[I 08:41:27.967 NotebookApp] Kernel shutdown: 81b07424-c53e-4167-a88d-a418dd9536a3
+[I 08:41:28.370 NotebookApp] Kernel shutdown: 603c6ecc-60c3-46f0-8298-af450c87161f
+[I 09:39:09.049 NotebookApp] Kernel interrupted: a286a907-5269-49cb-81d0-a748311734f0
+[I 09:39:29.852 NotebookApp] Kernel interrupted: a286a907-5269-49cb-81d0-a748311734f0
+[I 09:39:37.424 NotebookApp] Saving file at /scripts/inceptionV4_val_raw-part-v2.ipynb
+[I 09:41:03.024 NotebookApp] Kernel restarted: a286a907-5269-49cb-81d0-a748311734f0
+[I 09:41:30.299 NotebookApp] Saving file at /scripts/cnnmodels.py
+[I 09:41:37.414 NotebookApp] Saving file at /scripts/inceptionV4_val_raw-part-v2.ipynb
+[I 09:41:49.860 NotebookApp] Kernel restarted: a286a907-5269-49cb-81d0-a748311734f0
+[I 09:41:53.438 NotebookApp] Kernel restarted: a286a907-5269-49cb-81d0-a748311734f0
+[I 09:43:37.513 NotebookApp] Saving file at /scripts/inceptionV4_val_raw-part-v2.ipynb
+[I 11:41:13.921 NotebookApp] Kernel interrupted: a286a907-5269-49cb-81d0-a748311734f0
+[I 11:41:37.333 NotebookApp] Saving file at /scripts/inceptionV4_val_raw-part-v2.ipynb
+[W 12:00:49.509 NotebookApp] 404 GET http://httpheader.net/ (89.248.172.90) 1.75ms referer=None
+[I 12:39:03.041 NotebookApp] Kernel interrupted: a286a907-5269-49cb-81d0-a748311734f0
+[I 12:39:37.293 NotebookApp] Saving file at /scripts/inceptionV4_val_raw-part-v2.ipynb
+[I 12:41:08.725 NotebookApp] Saving file at /scripts/inceptionV4_val_raw-part-v2.ipynb
+[I 13:17:10.245 NotebookApp] Kernel started: 9d9c0d6d-2abd-455d-95ab-6c73e352c33b
+[I 13:17:33.741 NotebookApp] Kernel interrupted: a286a907-5269-49cb-81d0-a748311734f0
+Error allocating 15052800 bytes of device memory (out of memory). Driver report 5505024 bytes free and 11995578368 bytes total 
+[I 13:19:09.094 NotebookApp] Saving file at /scripts/inceptionV4_val_raw-part-v2.ipynb
+[I 13:27:38.968 NotebookApp] Copying scripts/inceptionV4_val_raw-part-v2.ipynb to /scripts
+[I 13:27:40.976 NotebookApp] Kernel started: e231c6f6-f144-4ac0-b99c-140ba2e5bd2d
+[I 13:28:51.757 NotebookApp] Kernel restarted: e231c6f6-f144-4ac0-b99c-140ba2e5bd2d
+[I 13:28:55.964 NotebookApp] Saving file at /scripts/inceptionV4_full_raw-part-v2.ipynb
+[I 13:29:30.610 NotebookApp] Kernel shutdown: a286a907-5269-49cb-81d0-a748311734f0
+[I 13:29:31.013 NotebookApp] Kernel shutdown: 9d9c0d6d-2abd-455d-95ab-6c73e352c33b
+ERR!\nERR!\n[I 13:30:09.615 NotebookApp] Kernel restarted: e231c6f6-f144-4ac0-b99c-140ba2e5bd2d
+[I 13:30:10.527 NotebookApp] Kernel restarted: e231c6f6-f144-4ac0-b99c-140ba2e5bd2d
+[I 13:30:28.321 NotebookApp] Kernel restarted: e231c6f6-f144-4ac0-b99c-140ba2e5bd2d
+[I 13:31:42.020 NotebookApp] Saving file at /scripts/inceptionV4_full_raw-part-v2.ipynb
+[I 13:45:41.978 NotebookApp] Saving file at /scripts/inceptionV4_full_raw-part-v2.ipynb
+[I 13:45:44.613 NotebookApp] Kernel started: 2e36a35b-a492-4ac8-803a-3e678f52e364
+[I 13:47:09.722 NotebookApp] Saving file at /scripts/inceptionV4_full_raw-part-v2.ipynb
+[I 13:55:18.151 NotebookApp] Saving file at /scripts/inceptionV4_full_raw-part-v2.ipynb
+[I 14:43:41.944 NotebookApp] Saving file at /scripts/inceptionV4_full_raw-part-v2.ipynb
+[I 15:47:41.909 NotebookApp] Saving file at /scripts/inceptionV4_full_raw-part-v2.ipynb
+[I 18:29:41.832 NotebookApp] Saving file at /scripts/inceptionV4_full_raw-part-v2.ipynb
+[I 18:34:29.892 NotebookApp] 302 GET /notebooks/sub/sub_dara_full_inceptionv4_raw_5xbag_20170521.csv (176.61.36.2) 0.93ms
+[I 18:34:38.137 NotebookApp] 302 GET /notebooks/sub/sub_dara_full_inceptionv4_raw_5xbag_20170521.csv (176.61.36.2) 0.92ms
+[I 18:35:41.781 NotebookApp] Saving file at /scripts/inceptionV4_full_raw-part-v2.ipynb
+[I 18:38:43.420 NotebookApp] Saving file at /scripts/inceptionV4_full_raw-part-v2.ipynb
