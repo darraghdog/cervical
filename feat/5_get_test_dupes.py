@@ -82,9 +82,11 @@ dupes = []
 prev_row = ['tmp', 'tmp', 'tmp']
 for c, row in df.iterrows():
     curr_row = list(row)
-    if hamdist([curr_row[2], prev_row[2]])<4:
-        if (curr_row[0]=='test') or (prev_row[0]=='test'):
+    if hamdist([curr_row[2], prev_row[2]])<6:
+        if (curr_row[0]=='test'):
             dupes.append(curr_row+prev_row)
+        if (prev_row[0]=='test'):
+            dupes.append(prev_row+curr_row)   
     prev_row = curr_row
     
 for d in dupes:
@@ -94,3 +96,12 @@ for d in dupes:
     plt.figure(figsize=(6,6))
     plt.imshow(plot_image)
     
+dupesdf = pd.DataFrame(dupes)
+dupesdf.to_csv("../../features/dupes_leak6.csv", index = False, Header = None)
+
+
+
+
+
+
+

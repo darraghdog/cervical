@@ -51,7 +51,7 @@ for(var in names(sub)[2:4]) sub[[var]] = 0.2* (sub1[[var]] + sub2[[var]]) + 0.2*
 
 #########################################
 # Load leak
-dupes = fread("../features/dupes_leak.csv", skip = 1)
+dupes = fread("../features/dupes_leak6.csv", skip = 1)
 dupes = dupes[,c(2,4), with=F]
 setnames(dupes, c("image_name", "act"))
 dupes
@@ -63,5 +63,5 @@ sub[image_name %in% dupes$image_name]
 dupes
 View(sub)
 
-write.csv(sub, "404020_dhdmbestInception----Checking dupe images---Leak.csv", row.names = F, )
+write.csv(sub, "404020_dhdmbestInception-check dupe images-leak6distance.csv", row.names = F, )
 

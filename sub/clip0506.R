@@ -34,7 +34,22 @@ for(i in 1:3) sub[[cols[i]]] = mat[,i]
 sub3 = sub
 
 ########################################
+sub <- fread("sub_dara_full_remove_addl_3xbag_20170605.csv")
+
+mat = as.matrix(sub[,-1,with=F])
+mat[mat < 0.02] = 0.02
+mat = mat/rowSums(mat)
+
+cols= names(sub)[-1]
+for(i in 1:3) sub[[cols[i]]] = mat[,i]
+sub4 = sub
+
+
+for (i in 2:4) print(cor(sub1[[i]], sub2[[i]]))
+
+########################################
 # Try baggin
+sub4 = sub4[order(image_name)]
 sub3 = sub3[order(image_name)]
 sub2 = sub2[order(image_name)]
 sub1 = sub1[order(image_name)]
@@ -47,7 +62,7 @@ subdm1 = subdm1[order(image_name)]
 subdm2 = subdm2[order(image_name)]
 
 sub = sub1
-for(var in names(sub)[2:4]) sub[[var]] = 0.2* (sub1[[var]] + sub2[[var]]) + 0.2* (subdm1[[var]] + subdm2[[var]]) + .2*(sub3[[var]])
+for(var in names(sub)[2:4]) sub[[var]] = 0.2* (sub1[[var]] + sub2[[var]] + sub4[[var]]) + 0.2* (subdm1[[var]] + subdm2[[var]])
 
 #########################################
 # Load leak
@@ -63,5 +78,5 @@ sub[image_name %in% dupes$image_name]
 dupes
 View(sub)
 
-write.csv(sub, "404020_dhdmbestInception----Checking dupe images---Leak.csv", row.names = F, )
+write.csv(sub, "remove_addtl_leak.csv", row.names = F, )
 
