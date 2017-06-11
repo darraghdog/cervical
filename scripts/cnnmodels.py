@@ -382,6 +382,77 @@ def resnet50_model(img_rows, img_cols, color_type=1, num_class=None):
     return model
 
 
+def resnet50_model_noweights(img_rows, img_cols, color_type=1, num_class=None):
+    """
+    Resnet 50 Model for Keras
+    Model Schema is based on 
+    https://github.com/fchollet/deep-learning-models/blob/master/resnet50.py
+    ImageNet Pretrained Weights 
+    https://github.com/fchollet/deep-learning-models/releases/download/v0.2/resnet50_weights_th_dim_ordering_th_kernels.h5
+    Parameters:
+      img_rows, img_cols - resolution of inputs
+      channel - 1 for grayscale, 3 for color 
+      num_class - number of class labels for our classification task
+    """
+
+    bn_axis = 1
+    img_input = Input(shape=(color_type, img_rows, img_cols))
+    x = ZeroPadding2D((3, 3))(img_input)
+    x = Convolution2D(64, 7, 7, subsample=(2, 2), name='conv1')(x)
+    x = BatchNormalization(axis=bn_axis, name='bn_conv1')(x)
+    x = Activation('relu')(x)
+    x = MaxPooling2D((3, 3), strides=(2, 2))(x)
+
+    x = conv_block(x, 3, [64, 64, 256], stage=2, block='a', strides=(1, 1))
+    x = identity_block(x, 3, [64, 64, 256], stage=2, block='b')
+    x = identity_block(x, 3, [64, 64, 256], stage=2, block='c')
+
+    x = conv_block(x, 3, [128, 128, 512], stage=3, block='a')
+    x = identity_block(x, 3, [128, 128, 512], stage=3, block='b')
+    x = identity_block(x, 3, [128, 128, 512], stage=3, block='c')
+    x = identity_block(x, 3, [128, 128, 512], stage=3, block='d')
+
+    x = conv_block(x, 3, [256, 256, 1024], stage=4, block='a')
+    x = identity_block(x, 3, [256, 256, 1024], stage=4, block='b')
+    x = identity_block(x, 3, [256, 256, 1024], stage=4, block='c')
+    x = identity_block(x, 3, [256, 256, 1024], stage=4, block='d')
+    x = identity_block(x, 3, [256, 256, 1024], stage=4, block='e')
+    x = identity_block(x, 3, [256, 256, 1024], stage=4, block='f')
+
+    x = conv_block(x, 3, [512, 512, 2048], stage=5, block='a')
+    x = identity_block(x, 3, [512, 512, 2048], stage=5, block='b')
+    x = identity_block(x, 3, [512, 512, 2048], stage=5, block='c')
+
+    # Fully Connected Softmax Layer
+    x_fc = AveragePooling2D((7, 7), name='avg_pool')(x)
+    x_fc = Flatten()(x_fc)
+    #x_fc = Dense(1000, activation='softmax', name='fc1000')(x_fc)
+    x_fc = Dense(num_class, activation='softmax', name='fc10')(x_fc)
+
+    ## Create model
+    #model = Model(img_input, x_fc)
+    #
+    ## Load ImageNet pre-trained data 
+    #model.load_weights('../cache/resnet50_weights_th_dim_ordering_th_kernels.h5')
+
+    ## Truncate and replace softmax layer for transfer learning
+    ## Cannot use model.layers.pop() since model is not of Sequential() type
+    ## The method below works since pre-trained weights are stored in layers but not in the model
+    #x_newfc = AveragePooling2D((7, 7), name='avg_pool')(x)
+    #x_newfc = Flatten()(x_newfc)
+    #x_newfc = Dense(num_class, activation='softmax', name='fc10')(x_newfc)
+
+    ## Create another model with our customized softmax
+    #model = Model(img_input, x_newfc)
+    model = Model(img_input, x_fc)
+
+    # Learning rate is changed to 0.001
+    sgd = SGD(lr=1e-4, decay=1e-6, momentum=0.9, nesterov=True)
+    model.compile(optimizer=sgd, loss='categorical_crossentropy', metrics=['accuracy'])
+  
+    return model
+
+
 def conv2d_bn(x, nb_filter, nb_row, nb_col,
               border_mode='same', subsample=(1, 1), bias=False):
     """

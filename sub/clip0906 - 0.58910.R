@@ -46,28 +46,13 @@ cols= names(sub)[-1]
 for(i in 1:3) sub[[cols[i]]] = mat[,i]
 sub7 = sub
 
-########################################
-sub <- fread("sub_dara_full_noWts_10xbag_20170610.csv")
-
-mat = as.matrix(sub[,-1,with=F])
-mat[mat < 0.02] = 0.02
-mat = mat/rowSums(mat)
-
-cols= names(sub)[-1]
-for(i in 1:3) sub[[cols[i]]] = mat[,i]
-sub8 = sub
-
-
 
 ########################################
 # Try baggin
-sub8 = sub8[order(image_name)]
 sub7 = sub7[order(image_name)]
 sub6 = sub6[order(image_name)]
 sub5 = sub5[order(image_name)]
 sub4 = sub4[order(image_name)]
-
-for(var in names(sub8)[-1]) print(cor(sub4[[var]], sub8[[var]]))
 
 ########################################
 subdm1 = fread("bebhionn_submission_clipped.csv")
@@ -76,7 +61,8 @@ subdm1 = subdm1[order(image_name)]
 subdm2 = subdm2[order(image_name)]
 
 sub = sub4
-for(var in names(sub)[2:4]) sub[[var]] = 0.125 * (sub4[[var]]+ sub5[[var]]+ sub6[[var]]+ sub7[[var]]) + 0.1*sub8[[var]] + 0.2* (subdm1[[var]] + subdm2[[var]])
+#for(var in names(sub)[2:4]) sub[[var]] = (.1/3)* (sub1[[var]] + sub2[[var]] + sub3[[var]]) + 0.1 * (sub4[[var]]+ sub5[[var]]+ sub6[[var]]+ sub7[[var]]) + 0.25* (subdm1[[var]] + subdm2[[var]])
+for(var in names(sub)[2:4]) sub[[var]] = 0.125 * (sub4[[var]]+ sub5[[var]]+ sub6[[var]]+ sub7[[var]]) + 0.25* (subdm1[[var]] + subdm2[[var]])
 
 #########################################
 # Load leak
@@ -92,5 +78,5 @@ sub[image_name %in% dupes$image_name]
 dupes
 #View(sub)
 
-write.csv(sub, "0.8(remove_addtl_10x-leakv6)_0.2(noWts).csv", row.names = F)
+write.csv(sub, "remove_addtl_10x-leakv6.csv", row.names = F)
 
