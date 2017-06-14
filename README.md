@@ -1,6 +1,10 @@
 # Cervical Cancer Detection (@Kaggle @Intel)
 ### Steps to reproduce
 
+Unzip folder in main directory `kaggle_cervical-master.zip` and run as per readme instructions to get the `parse_predictions_file/bebhionn_submission.csv` file. Place this in the sub/ directory. 
+
+Unzip folder in main directory `cervical-master.zip` and run as per respective readme instructions to get the `parse_predictions_file/output.csv` file. Place this in the sub/ directory. 
+
 Directory Structure to set up locally
 ```
 features/
@@ -36,6 +40,7 @@ Run the scripts in folder `final` in sequence.
 6_resnet50_full_raw-capAdditional-10x-cut0.4.ipynb
 7_resnet50_full_raw-capAdditional-10x-cut0.6.ipynb
 8_resnet50_full_gmm-capAdditional-10x-cut0.2.ipynb
-9_ClipAndSub.R
+9_ClipAndSub.R   # Submission 1 : Darragh & Dave
+10_ClipAndSub.R  # Submission 2 : Damian & Darragh 
 
 ```
