@@ -74,7 +74,7 @@ for direc in subdir:
             img_id_hash.append([direc, name, img_hash])
             counter+=1
 df = pd.DataFrame(img_id_hash,columns=['SubDirectory', 'file_name', 'image_hash'])
-df = df.sort(['image_hash'], axis = 0).reset_index(drop=True)
+df = df.sort_values(['image_hash'], axis = 0).reset_index(drop=True)
 df.to_csv("../../features/dupes_table_raw.csv", index = False)
 
 # Check for dupes with test folder
@@ -89,15 +89,16 @@ for c, row in df.iterrows():
             dupes.append(prev_row+curr_row)   
     prev_row = curr_row
     
-for d in dupes:
+for d in dupes[-10:]:
     img_A = imread(os.path.join(d[0], d[1]))
     img_B = imread(os.path.join(d[3], d[4]))
     plot_image = np.concatenate((img_A, img_B), axis=1)
-    plt.figure(figsize=(6,6))
+    plt.figure(figsize=(3,3))
     plt.imshow(plot_image)
     
 dupesdf = pd.DataFrame(dupes)
-dupesdf.to_csv("../../features/dupes_leak6.csv", index = False, Header = None)
+dupesdf = dupesdf[dupesdf[0]!=dupesdf[3]]
+dupesdf.to_csv("../../features/dupes_leak6.csv", index = False, header = None)
 
 
 

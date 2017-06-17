@@ -56,7 +56,7 @@ sub4 = sub4[order(image_name)]
 
 ########################################
 #subdm1 = fread("bebhionn_submission_clipped.csv")
-subdm1 = fread("bebhionn_submission_clipped.csv")
+subdm1 = fread("bebhionn_submission1.csv")
 #subdm2 = fread("bebhionn_googlenet_submission.csv")
 subdm1 = subdm1[order(image_name)]
 #subdm2 = subdm2[order(image_name)]
