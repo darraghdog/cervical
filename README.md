@@ -1,4 +1,7 @@
 # Cervical Cancer Detection (@Kaggle @Intel)
+
+Models include resnet50, vgg16 along with dhash of images. 
+
 ### Steps to reproduce
 
 Unzip folder in main directory `kaggle_cervical-master.zip` and run as per readme instructions to get the `parse_predictions_file/bebhionn_submission.csv` file. Place this in the sub/ directory. 
